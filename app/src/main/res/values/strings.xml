@@ -1,0 +1,1043 @@
+<resources>
+    <string name="app_name">Farm Infinity</string>
+
+    <string name="take_photo">Take Photo</string>
+    <string name="start_capture">Start Capture</string>
+    <string name="stop_capture">Stop Capture</string>
+    <string name="warning">GPS is not enabled.</string>
+
+    <string name="lbl_rad_btn_farmer">Farmer</string>
+    <string name="lbl_rad_btn_officer">Officer</string>
+    <string name="hnt_et_username">Phone</string>
+    <string name="hnt_et_otp">OTP</string>
+    <string name="hnt_username">User-Id</string>
+    <string name="hnt_password">Password</string>
+    <string name="lbl_signup">Create Account</string>
+    <!--<string name="Login">Login</string>-->
+    <string name="lbl_fpo">FPO</string>
+    <string name="lbl_agent">Agent</string>
+    <string name="lbl_privacy_policy_link">By Signing In, you agree to the Privacy Policy \nand Terms and conditions.</string>
+    <string name="lbl_pp_link">Privacy Policy</string>
+
+    <string name="resend"><u>Resend</u></string>
+
+    <string name="error_message_blank_field">Cannot be blank</string>
+    <string name="error_message_invalid_phone_no">Invalid phone number</string>
+    <string name="error_message_invalid_email">Invalid email</string>
+    <string name="error_message_invalid_input">Invalid input</string>
+    <string name="resend_otp">Resend OTP?</string>
+    <string name="forgot_pswd">Forgot Password?</string>
+
+    <string name="error_msg_pswd_len">Password should be between 8 to 16 characters</string>
+    <string name="error_msg_pswd_match">Password did not match</string>
+    <string name="error_msg_session_expired">Session expired. Please login again.</string>
+    <string name="error_msg_logged_out">You are logged out</string>
+    <string name="error_msg_feature_not_available">Feature not available</string>
+    <string name="error_msg_app_update">We need permissions for some feature to work smoothly</string>
+    <string name="error_msg_app_restart">Please restart the application</string>
+    <string name="msg_enter_otp">Enter OTP Once You Receive It</string>
+    <string name="err_msg_login_officer">Please enter username and password</string>
+    <string name="err_msg_login_farmer">Invalid Mobile Number/OTP</string>
+    <string name="msg_level_one_complete_farmer">Please continue with the rest of the forms by Login In with the phone number provided during sign up/registration.</string>
+    <string name="error_msg_loc">Could not get the location. Try again.</string>
+    <string name="error_msg_farmer_declaration">Check farmer declaration checkbox</string>
+    <string name="error_msg_officer_declaration">Check officer declaration checkbox</string>
+    <string name="err_msg_gender">Select Gender</string>
+    <string name="err_msg_area_units">Select land Unit</string>
+    <string name="err_msg_state">Select State</string>
+    <string name="err_msg_pin">Pin number should be 6 digits</string>
+    <string name="err_msg_amount">Select Loan Amount</string>
+    <string name="err_msg_loan_purpose">Select Loan Purpose</string>
+    <string name="err_msg_age">Age should be between 18 to 70 years</string>
+    <string name="err_msg_irr_fclty">Check at least one from Irrigation Facility</string>
+    <string name="err_msg_farm_equip">Check at least one from Farm Equipments</string>
+    <string name="err_msg_livestock">Check at least one from Livestock</string>
+    <string name="err_msg_rabi_crp">Check at least one from Rabi Crops</string>
+    <string name="err_msg_kharif_crp">Check at least one from Kharif Crops</string>
+    <string name="err_msg_summer_crp">Check at least one from Summer Crops</string>
+    <string name="err_msg_plantation_crp_area">Plantation area must be less than the total farmland area</string>
+    <string name="err_msg_plantation_crp">Check at least one plantation crop</string>
+    <string name="err_msg_doc_name_match">Name in document did not match with the applicant name</string>
+    <string name="err_msg_masked_image">Failed to get the masked image. Try again</string>
+    <string name="err_msg_aadhar_back">Please upload the back side of aadhaar card</string>
+    <string name="err_msg_passport_name_match">Passport failed in validation. Name did not match.</string>
+    <string name="err_msg_passport_number">Passport failed in validation.</string>
+    <string name="err_msg_voter_id_name_match">Voter ID failed in validation. Name did not match</string>
+    <string name="err_msg_voter_id_number">Voter ID failed in validation</string>
+    <string name="err_msg_dl_name_match">Driving license failed in validation. Name did not match</string>
+    <string name="err_msg_dl_number">Driving license failed in validation</string>
+    <string name="err_msg_pan_name_match">Pan failed in validation. Name did not match.</string>
+    <string name="err_msg_pan_number">Pan failed in validation</string>
+    <string name="err_msg_invalid_aadhaar">Invalid aadhar number</string>
+    <string name="err_msg_invalid_pan">Invalid pan number</string>
+    <string name="err_msg_invalid_dl">Invalid driving license number</string>
+    <string name="err_msg_invalid_passport">Invalid passport file number</string>
+    <string name="err_msg_invalid_voter_id">Invalid voter id number</string>
+    <string name="msg_aadhaar_prompt">Keep your aadhaar with you and press OK to continue.</string>
+    <string name="err_msg_doc_varifation">Something went wrong. Could not validate</string>
+    <string name="err_msg_ifsc_code">Ifsc code should be of 11 characters</string>
+    <string name="err_msg_acc_no">Account No. should be greater than 6 characters</string>
+    <string name="err_msg_family_member">Maximum 15 members allowed</string>
+    <string name="err_msg_pan_checked">Pan available checkbox is checked. Please select Pan card as proof of identity</string>
+    <string name="err_msg_dbt_empty">DBT account number cannot be blank</string>
+    <string name="err_msg_select_doc_name">Select a document name</string>
+    <string name="err_msg_select_loan_type">Select loan type</string>
+    <string name="err_msg_select_tenure">Select tenure</string>
+    <string name="err_msg_id_proof_select">Select ID proof document name</string>
+    <string name="err_msg_add_proof_select">Select Address proof document name</string>
+    <string name="err_msg_land_proof_select">Select land document name</string>
+    <string name="err_msg_valid_poi">Please enter a valid Id Proof document number</string>
+    <string name="err_msg_valid_poa">Please enter a valid Address Proof document number</string>
+
+    <string name="error_network_timeout">Request time out</string>
+    <string name="splash_footer">&#169;2020–2023 farmeasytechnologies</string>
+
+    <string name="login_screen_bottom_text">For new Farmer Producer Organisation(FPO) and Agent registration click on the respective link below</string>
+
+    <string name="gen_cred">Click here to generate farmer login credential\n(Optional)</string>
+
+    <string name="ddl_english">English</string>
+    <string name="ddl_hindi">Hindi-हिंदी</string>
+    <string name="ddl_assamese">Assamese-অসমীয়া</string>
+
+    <string name="ddl_male">Male</string>
+    <string name="ddl_female">Female</string>
+
+    <string name="ddl_unit_Acre">Acre</string>
+    <string name="ddl_unit_Bhigha">Bigha</string>
+
+    <string name="lbl_dashboard_add_btn">Add Client</string>
+    <string name="lbl_dashboard_add_text">Add farmer details</string>
+    <string name="lbl_dashboard_edit_btn">Edit/Search</string>
+    <string name="lbl_dashboard_edit_text">Search &amp; Edit farmer information</string>
+    <string name="lbl_dashboard_recent_btn">Recent</string>
+    <string name="lbl_dashboard_recent_text">Recently added clients</string>
+    <string name="lbl_dashboard_setting_btn">Settings &amp; Privacy</string>
+    <string name="lbl_dashboard_setting_text">Backup, Restore, Language, Privacy</string>
+    <string name="lbl_dashboard_reports_btn">Reports</string>
+    <string name="lbl_dashboard_reports_text">Generate reports</string>
+
+    <string name="lbl_choose_language">Choose Language</string>
+    <string name="lbl_home">Home</string>
+    <string name="lbl_setting">Settings</string>
+    <string name="lbl_reset_password">Reset Password</string>
+    <string name="lbl_logout">Logout</string>
+    <string name="lbl_language">Language</string>
+    <string name="lbl_password_management">Password Management</string>
+    <string name="lbl_change_password">Change Password</string>
+    <string name="lbl_memory_management">Memory Management</string>
+    <string name="lbl_clear_cache">Clear Cache</string>
+    <string name="lbl_share_app">Invite A Friend</string>
+    <string name="lbl_about">About</string>
+    <string name="lbl_about_text">Farm Infinity (Farmer application management app)</string>
+    <string name="lbl_version">Version 1.7.1</string>
+    <string name="lbl_privacy_policy">Privacy Policy</string>
+    <string name="lbl_term_con">Terms and Conditions</string>
+    <string name="lbl_hint_old_pswd">Old Password</string>
+    <string name="lbl__hint_new_pswd">New Password</string>
+    <string name="lbl_hint_confirm_pswd">Confirm Password</string>
+    <string name="lbl_recently_added">Recently Added</string>
+    <string name="lbl_edit_search">Edit/Search</string>
+    <string name="lbl_edit_prefrences">Edit Preferences</string>
+    <string name="lbl_send_otp">Send OTP</string>
+    <string name="lbl_text_and">&amp;</string>
+    <string name="lbl_hint_first_name">First</string>
+    <string name="lbl_hint_middle_name">Middle</string>
+    <string name="lbl_hint_last_name">Last</string>
+    <string name="lbl_resend_otp">Resend OTP</string>
+
+    <string name="et_hint_first_name">Enter your first name</string>
+    <string name="et_hint_middle_name">Enter your middle name</string>
+    <string name="et_hint_last_name">Enter your last name</string>
+    <string name="et_hint_dob">Enter dob from date picker</string>
+    <string name="et_hint_age">Age</string>
+    <string name="et_hint_farner_name">Enter your father name</string>
+    <string name="et_hint_phone_no">Enter your phone number</string>
+    <string name="et_hint_alt_phone_no">Enter your alternate phone number</string>
+    <string name="et_hint_email">Enter your email id</string>
+    <string name="et_hint_chem_fert">eg 10.0</string>
+    <string name="et_hint_pesticide">eg 10.0</string>
+    <string name="et_hint_organic_fert">eg 10.0</string>
+    <string name="et_hint_dbt_bank_name">Enter bank name</string>
+    <string name="et_hint_dbt_acc_no">Enter acc no.</string>\
+    <string name="et_hint_member_count">Enter no of family member</string>
+    <string name="et_hint_dbt_ifsc">Enter ifsc code</string>
+    <string name="et_hint_capture_date">Date</string>
+    <string name="et_hint_gps">Coordinates</string>
+
+    <string name="lbl_hint_otp">Enter OTP</string>
+    <string name="lbl_hint_reg_Ph_no">Enter your registered Phone No</string>
+    <string name="lbl_hint_new_pswd">Enter new password</string>
+    <string name="lbl_hint_confirm_new_pswd">Confirm new password</string>
+    <string name="lbl_upload_photo">UPLOAD PHOTO</string>
+    <string name="lbl_submit">Submit</string>
+    <string name="lbl_save">Save</string>
+    <string name="lbl_open_cam">Open Camera</string>
+    <string name="lbl_longitude">Longitude: </string>
+    <string name="lbl_latitude">Latitude: </string>
+    <string name="lbl_otp_msg">OTP is valid for 10 minutes</string>
+    <string name="lbl_verify">Verify</string>
+    <string name="lbl_farmer_search">Get Farmer Details</string>
+    <string name="lbl_hint_farmer_search_box">Enter</string>
+    <string name="lbl_text_farmer">Farmer</string>
+    <string name="lbl_text_officer">Officer</string>
+
+    <string name="content_description_cam">Open Camera</string>
+    <string name="content_description_cam_pane">Camera Pane</string>
+    <string name="content_description_ddl">Dropdown List</string>
+    <string name="content_description_gps">GPS</string>
+    <string name="content_description_calendar">Calendar</string>
+    <string name="content_description_logo">Logo</string>
+
+    <string name="lbl_share_msg">Easy and affordable financial services for farmers and agribusinesses apply now on "Farm Infinity" App. Link to the app is given below.</string>
+    <string name="lbl_thank_msg">Thank you. Have a nice day</string>
+
+
+    <string name="lbl_application_id">APPLICATION ID</string>
+    <string name="lbl_first_name">FIRST NAME</string>
+    <string name="lbl_middle_name">MIDDLE NAME</string>
+    <string name="lbl_last_name">LAST NAME</string>
+    <string name="lbl_date_of_birth">DATE OF BIRTH</string>
+    <string name="lbl_age">AGE</string>
+    <string name="lbl_gender">GENDER</string>
+    <string name="lbl_father_name">NAME OF FATHER</string>
+    <string name="lbl_married">IF MARRIED MENTION SPOUSE NAME</string>
+    <string name="lbl_phone_no">PHONE NO. (as per bank records)</string>
+    <string name="lbl_alt_phone_no">ALT PHONE NO.</string>
+    <string name="lbl_email">EMAIL</string>
+    <string name="lbl_address_line_1">ADDRESS LINE 1</string>
+    <string name="lbl_address_line_2">ADDRESS LINE 2</string>
+    <string name="lbl_village">VILLAGE</string>
+    <string name="lbl_city_town">CITY/TOWN</string>
+    <string name="lbl_district">DISTRICT</string>
+    <string name="lbl_pin">PIN</string>
+    <string name="lbl_state">STATE</string>
+    <string name="lbl_loan_amt">LOAN AMOUNT</string>
+    <string name="lbl_loan_purpose">LOAN PURPOSE</string>
+    <string name="lbl_loan_remarks">LOAN REMARKS</string>
+    <string name="lbl_gps">GPS LOCATION</string>
+    <string name="lbl_hint_long_lat">Longitude/Latitude</string>
+    <string name="cb_agree">I have read the terms and conditions cited below, and declare that the information given by me is true to my knowledge.</string>
+
+    <string name="lbl_is_fpo">Is Farmer member of FPO/FPC?</string>
+    <string name="lbl_fpo_name">FPO/FPC Name</string>
+    <string name="lbl_fpo_not_in_list">Check the checkbox if FPO/FPC is not on the list</string>
+    <string name="lbl_fpo_code">FPO/FPC Code</string>
+    <string name="lbl_family_member_count">No. of family members</string>
+    <string name="lbl_bank_details">BANK DETAILS (For DBT)</string>
+    <string name="lbl_acc_no">Account No.</string>
+    <string name="lbl_bank_name">Bank Name</string>
+    <string name="lbl_ifsc">IFSC CODE</string>
+    <string name="lbl_passbook_photo">PASSBOOK PHOTO</string>
+    <string name="lbl_kcc">KCC SCHEME</string>
+    <string name="lbl_hold_kcc">Do you hold KCC?</string>
+    <string name="lbl_loan_type">Loan Type</string>
+    <string name="lbl_k_acc_no">Account No.</string>
+    <string name="lbl_k_namk_name">Bank Name</string>
+    <string name="lbl_k_ifsc">IFSC CODE</string>
+    <string name="lbl_k_tenure">Tenure(in months)</string>
+    <string name="lbl_annual_obligation">Annual Obligation</string>
+    <string name="lbl_insurance">INSURANCE SCHEME</string>
+    <string name="lbl_hold_insurence">Do you have Crop/Livestock insurance?</string>
+    <string name="lbl_other_loan">OTHER LOANS</string>
+    <string name="lbl_avail_other_loan">Did you avail any other loan?</string>
+    <string name="lbl_other_loan_type">Loan Type</string>
+    <string name="lbl_other_loan_Account_no">Account No.</string>
+    <string name="lbl_other_loan_bank_name">Bank Name</string>
+    <string name="lbl_other_loan_ifsc">IFSC CODE</string>
+    <string name="lbl_other_loan_amt">Loan Amount</string>
+    <string name="lbl_other_loan_tenure">Tenure(in months)</string>
+    <string name="lbl_other_loan_obligation">Annual Obligation</string>
+    <string name="lbl_doc_need">DOCUMENTS NEEDED</string>
+    <string name="lbl_passport_size_photo">Your colour passport size photograph</string>
+    <string name="lbl_pan_card">PAN CARD(Available)</string>
+    <string name="lbl_poi">Proof of Identity</string>
+    <string name="lbl_poa">Proof of Address</string>
+    <string name="lbl_land_doc">Land Document(Any)</string>
+    <string name="lbl_contact">Do you want us to contact you?</string>
+
+    <string name="lbl_land_holdings">Land Holding</string>
+    <string name="lbl_land_area">Total farmland, including plantation area</string>
+    <string name="lbl_land_area_unit">in (select from the dropdown list.)</string>
+    <string name="lbl_irrigation_facility">Irrigation Facility</string>
+    <string name="lbl_drip_irrigation">Drip Irrigation</string>
+    <string name="lbl_river_cannal">River/Canal Nearby</string>
+    <string name="lbl_hydroponics">Hydroponics</string>
+    <string name="lbl_sprinklers">Sprinklers</string>
+    <string name="lbl_rainfed">Rainfed</string>
+    <string name="lbl_water_pumps">Water Pumps</string>
+    <string name="lbl_rain_pond">Rain harvesting/Pond</string>
+    <string name="lbl_solar_water_pumps">Solar Water Pumps</string>
+    <string name="lbl_other">Other</string>
+    <string name="lbl_farm_equipment">Farm Equipments</string>
+    <string name="lbl_harvester">Harvester</string>
+    <string name="lbl_seeder">Seeder</string>
+    <string name="lbl_plough">Plough-Cattle Driven</string>
+    <string name="lbl_tractor">Tractor</string>
+    <string name="lbl_power_tiller">Power Tiller</string>
+    <string name="lbl_weeder">Weeder</string>
+    <string name="lbl_farm_storage_facility">Farm Storage Facilities available?</string>
+    <string name="lbl_post_harvest_facility">Post Harvest Facilities available?</string>
+    <string name="lbl_livestock">Livestock</string>
+    <string name="lbl_bull">Bull</string>
+    <string name="lbl_calf">Calf</string>
+    <string name="lbl_camel">Camel</string>
+    <string name="lbl_cow">Cow</string>
+    <string name="lbl_duck">Duck</string>
+    <string name="lbl_goat">Goat</string>
+    <string name="lbl_hen">Hen</string>
+    <string name="lbl_horse_mare_mule">Horse/Mare/Mule</string>
+    <string name="lbl_pig">Pig</string>
+    <string name="lbl_rabbit">Rabbit</string>
+    <string name="lbl_sheep">Sheep</string>
+    <string name="lbl_rabi_crops">Rabi Crops</string>
+    <string name="lbl_cash_crop">Cash Crop</string>
+    <string name="lbl_cereal_grain">Cereals and Grains</string>
+    <string name="lbl_oil_seed">Oil Seeds</string>
+    <string name="lbl_pulses">Pulses</string>
+    <string name="lbl_spices">Spices</string>
+    <string name="lbl_vegetables">Vegetables</string>
+    <string name="lbl_kharif_crops">Kharif Crops</string>
+    <string name="lbl_summer_crops">Summer Crops</string>
+    <string name="lbl_plantation_crops">Plantation Crops</string>
+    <string name="lbl_plantation_crop">Plantation Crop</string>
+    <string name="lbl_plantation_crops_area">Plantation area (in acres)</string>
+    <string name="lbl_plantation_fruit">Plantation Fruit</string>
+    <string name="lbl_medicinal_plant">Medicinal Plant</string>
+    <string name="lbl_exotic_plant">Exotic Crop</string>
+    <string name="lbl_chemical_fertilizer">Chemical Fertiliser Used(kgs/acre)</string>
+    <string name="lbl_pesticide">Pesticide Used(kgs/acre)</string>
+    <string name="lbl_organic_fertilizer">Organic Fertiliser Used(kgs/acre)</string>
+
+    <string name="lbl_yes">Yes</string>
+    <string name="lbl_no">No</string>
+    <string name="lbl_hint_capital">Enter in CAPITAL</string>
+
+    <string name="privacy_policy_url">https://farminfinity.com/privacy_policy1.html</string>
+    <string name="terms_url">https://farminfinity.com/terms.html</string>
+
+    <string name="farmer_declaration_emp">By validating through OTP, the applicant declare the information entered in the application
+        of this platform is true to his/her knowledge. Also acknowledged by the applicant that submission of the application,
+        Farm Infinity does not guarantee disbursement/sanction of any kind of loan or other financial products to him/her.
+        Farm infinity is not responsible for any dispute arising of  incorrect/fraudulent information provided</string>
+
+    <string name="farmer_declaration">I agree that the information filled in this platform correct to the best of
+        my knowledge. I hereby declare that I have not altered
+        or manipulated any information while submitting this application.</string>
+
+    <string name="officer_declaration">I agree that the information filled in this platform is as given by the applicant and is correct
+        to the best of my knowledge. I hereby declare that I have not altered
+        or manipulated any information while submitting this application.</string>
+
+    <!-- Placeholder -->
+    <string name="string_farmer_statement">I, %1$s, aged (Age), years, son/daughter of (Name of Father) a resident of
+        (Full Residential Address) in the district of (District Name), (State Name), do hereby declare that the information
+        provided hereinabove and in the documents appended herewith is true and correct to the best of my knowledge and belief
+        and nothing has been falsely stated or concealed therein. I understand that if the said information as given by me is proved
+        to be false, then I will have to face punishment as per any provision of Law for the time being in force as well as the benefit
+        availed of by me or the benefit accrued to me shall be summarily canceled.
+    </string>
+
+    <string name="string_officer_statement">I, %1$s, aged (Age), years, son/daughter of (Name of Father) a resident
+        of (Full Residential Address) in the district of (District Name), (State Name), Employee of Farm Infinity,
+        Employee ID (ID) do hereby declare that the information collected hereinabove and in the documents appended
+        herewith is true and correct to the best of my knowledge and belief and nothing has been falsely stated or
+        concealed therein. I understand that if the said information as given by me is proved to be false, then I
+        will have to face punishment as per any provision of Law for the time being in force as well as the benefit
+        availed of by me or the benefit accrued to me shall be summarily canceled.
+    </string>
+
+    <string name="string_sub_inst_officer">Unlock the applicant\'s Farm Infinity score and get access to the Credit
+        Report by paying a nominal fee of \u20B950/-only. Please click pay now to proceed or
+        click pay later to skip.</string>
+    <string name="string_sub_inst_farmer">Know your Farm Infinity score and get
+        access to the Credit Report by paying a nominal fee of \u20B950/-only.
+        Please click pay now to proceed or click pay later to skip.
+    </string>
+
+    <!-- String Array -->
+    <string-array name="cash_crop">
+        <item>Arecanut</item>
+        <item>Bamboo</item>
+        <item>Betal Leaves</item>
+        <item>Coca</item>
+        <item>Cocoa</item>
+        <item>Coconut</item>
+        <item>Coffee</item>
+        <item>Cotton</item>
+        <item>Jute</item>
+        <item>Rubber</item>
+        <item>Sugarcane</item>
+        <item>Tea</item>
+        <item>Tobacco</item>
+    </string-array>
+
+    <string-array name="cereals_grains">
+        <item>Autumn Paddy (Ahu)</item>
+        <item>Bajra (Pearl Millet/Cumbu)</item>
+        <item>Barley (Jau)</item>
+        <item>Black Rice</item>
+        <item>Foxtail Millet (Navane)</item>
+        <item>Joha Rice</item>
+        <item>Jowar (Sorghum)</item>
+        <item>Hybrid Paddy</item>
+        <item>Kodo Millet (Varagu)</item>
+        <item>Maize</item>
+        <item>Paddy (Dhan) (Basmati)</item>
+        <item>Paddy (Dhan) (Common)</item>
+        <item>Ragi (Finger Millet)</item>
+        <item>Rapeseed</item>
+        <item>Red Rice</item>
+        <item>Rice</item>
+        <item>Sticky Rice (Bora Rice)</item>
+        <item>Summer Paddy (Boro)</item>
+        <item>Wheat</item>
+        <item>Winter Paddy (Sali)</item>
+    </string-array>
+
+    <string-array name="oil_seeds">
+        <item>Almond (Badam)</item>
+        <item>Cashew Kernel</item>
+        <item>Castor</item>
+        <item>Groundnut</item>
+        <item>Indian Colza (Sarson)</item>
+        <item>Linseed</item>
+        <item>Mahua Seed (Hippe seed)</item>
+        <item>Mustard</item>
+        <item>Niger Seed (Ramtil)</item>
+        <item>Sesamum (Sesame/Gingelly/Til)</item>
+        <item>Soyabean</item>
+        <item>Sunflower</item>
+        <item>Toria</item>
+        <item>Walnut</item>
+    </string-array>
+
+    <string-array name="pulses">
+        <item>Arhar (Tur/Red Gram)</item>
+        <item>Bengal Gram (Channa)</item>
+        <item>Black Gram (UradBeans)</item>
+        <item>Cowpea (Lobia/Karamani)</item>
+        <item>Green Gram (Moong)</item>
+        <item>Kabuli Chana (Chickpeas-White)</item>
+        <item>Lentil (Masoor)</item>
+        <item>Moth Dal</item>
+        <item>Red Kidney Beans (Rajma)</item>
+        <item>Sago Seed</item>
+        <item>Surat Beans (Papadi)</item>
+        <item>Thogrikai</item>
+        <item>Avare (Horse Beans)</item>
+    </string-array>
+
+    <string-array name="spices">
+        <item>Ajwain</item>
+        <item>Amaranth</item>
+        <item>Bay leaf (Tejpatta)</item>
+        <item>Black pepper</item>
+        <item>Cardamoms</item>
+        <item>Cinnamon (Dalchini)</item>
+        <item>Cloves</item>
+        <item>Coriander</item>
+        <item>Cumin</item>
+        <item>Dill Seed</item>
+        <item>Garlic</item>
+        <item>Ginger</item>
+        <item>Green Chilli</item>
+        <item>Methi or Fenugreek</item>
+        <item>Nutmeg</item>
+        <item>Onion</item>
+        <item>Saffron</item>
+        <item>Soanf / Fennel / Saunf</item>
+        <item>Star anise</item>
+        <item>Turmeric</item>
+        <item>King Chilli</item>
+    </string-array>
+
+    <string-array name="vegetables">
+        <item>Ashgourd</item>
+        <item>Beans</item>
+        <item>Beetroot</item>
+        <item>Bitter gourd</item>
+        <item>Bottle gourd</item>
+        <item>Brinjal</item>
+        <item>Bush Beans</item>
+        <item>Cabbage</item>
+        <item>Capsicum</item>
+        <item>Carrot</item>
+        <item>Cauliflower</item>
+        <item>Cluster beans/Guar</item>
+        <item>Colacasia</item>
+        <item>Cucumber (Kheera)</item>
+        <item>Elephant Yam</item>
+        <item>French Beans</item>
+        <item>Galgal (Lemon)</item>
+        <item>Green Peas</item>
+        <item>Indian Beans (Seam)</item>
+        <item>KnoolKhol</item>
+        <item>Lablab Beans</item>
+        <item>Ladies Finger (Bhindi)</item>
+        <item>Lemon</item>
+        <item>Little gourd (Kundru)</item>
+        <item>Long Melon (Kakri)</item>
+        <item>Papaya</item>
+        <item>Pointed gourd (Parval)</item>
+        <item>Potato</item>
+        <item>Pumpkin</item>
+        <item>Raddish</item>
+        <item>Rat Tail Radish (Mogri)</item>
+        <item>Raw Banana (Balekai)</item>
+        <item>Ridgeguard (Tori)</item>
+        <item>Round gourd</item>
+        <item>Snake gourd</item>
+        <item>Spinach</item>
+        <item>Spine gourd</item>
+        <item>Sponge gourd</item>
+        <item>Squash (Chappal Kadoo)</item>
+        <item>Sweet Potato</item>
+        <item>Sweet Pumpkin</item>
+        <item>Tapioca</item>
+        <item>Taramira</item>
+        <item>Tinda</item>
+        <item>Tomato</item>
+        <item>Turnip</item>
+        <item>Water gourd</item>
+        <item>White Pumpkin</item>
+        <item>Yam</item>
+    </string-array>
+
+    <string-array name="plantation_crop">
+        <item>Anthorium</item>
+        <item>Astera</item>
+        <item>Balsam</item>
+        <item>Bougainvillea</item>
+        <item>Calendula</item>
+        <item>Carnation</item>
+        <item>Chrysanthemum</item>
+        <item>Dahlia</item>
+        <item>Gerbera</item>
+        <item>Gladiolus</item>
+        <item>Heliconia</item>
+        <item>Jarul</item>
+        <item>Jasmine</item>
+        <item>Javi</item>
+        <item>Kankambra</item>
+        <item>Lak (Teora)</item>
+        <item>Lilly</item>
+        <item>Lotus</item>
+        <item>Mahedi</item>
+        <item>Marigold</item>
+        <item>Mushrooms</item>
+        <item>Mussaenda</item>
+        <item>Orchid</item>
+        <item>Patti Calcutta</item>
+        <item>Petunia</item>
+        <item>Phlox</item>
+        <item>Portulaca</item>
+        <item>Pundi</item>
+        <item>Resinwood / Resin wood</item>
+        <item>Safflower</item>
+        <item>Same/Savi</item>
+        <item>Soap nut (Antawala/Retha/Ritha)</item>
+        <item>Sunhemp</item>
+        <item>Sweet pea</item>
+        <item>Torchwood</item>
+        <item>Tube Rose</item>
+        <item>Wood</item>
+        <item>Zinnia</item>
+        <item>Bird of Paradise (BOP)</item>
+        <item>Broomstick</item>
+        <item>Raibel</item>
+        <item>Salvia (Chia Seeds)</item>
+    </string-array>
+
+    <string-array name="plantation_fruits">
+        <item>Ambada</item>
+        <item>Apple</item>
+        <item>Apricot (Jardalu/Khumani)</item>
+        <item>Banana</item>
+        <item>Ber (Zizyphus/Borehannu)</item>
+        <item>Blackberry</item>
+        <item>Blueberry</item>
+        <item>Chakotra</item>
+        <item>Cherry</item>
+        <item>Chikoos (Sapota)</item>
+        <item>Custard Apple</item>
+        <item>Fig (Anjura/Anjeer)</item>
+        <item>Grapes</item>
+        <item>Guava</item>
+        <item>Haralekai</item>
+        <item>Jack Fruit</item>
+        <item>Jamun (Narale Hannu)</item>
+        <item>Karbuja (Musk Melon)</item>
+        <item>Kinnow</item>
+        <item>Kiwi</item>
+        <item>Lime</item>
+        <item>Litchi</item>
+        <item>Mango</item>
+        <item>Mousambi (Sweet Lime)</item>
+        <item>Myrobolan (Harad)</item>
+        <item>Orange</item>
+        <item>Peach</item>
+        <item>Pear (Marasebu)</item>
+        <item>Persimmon (Japani Fal)</item>
+        <item>Pineapple</item>
+        <item>Plum</item>
+        <item>Pomegranate</item>
+        <item>Strawberry</item>
+        <item>Tamarind Fruit</item>
+        <item>Water Melon</item>
+        <item>Star Fruit</item>
+    </string-array>
+
+    <string-array name="medicinal_plant">
+        <item>Amla (Nelli Kai)</item>
+        <item>Ashwagandha</item>
+        <item>Drumstick</item>
+        <item>Honge</item>
+        <item>Isabgol (Psyllium)</item>
+        <item>Kacholam</item>
+        <item>Lint or flax</item>
+        <item>Mint (Pudina)</item>
+        <item>Neem</item>
+        <item>Patchouli</item>
+        <item>Safed Musli</item>
+        <item>Sarpagandha</item>
+        <item>Kachur (Black Turmeric)</item>
+    </string-array>
+
+    <string-array name="exotic_crop">
+        <item>African marigold</item>
+        <item>French marigold</item>
+        <item>Rose</item>
+    </string-array>
+
+    <string-array name="crop_others">
+        <item>Egg</item>
+        <item>Egypian Clover (Barseem)</item>
+        <item>Ghee</item>
+        <item>Gur (Jaggery)</item>
+    </string-array>
+
+    <string-array name="bank_name">
+        <item>Allahabad Bank</item>
+        <item>Andhra Bank</item>
+        <item>Bank of Baroda</item>
+        <item>Bank of India</item>
+        <item>Bank of Maharashtra</item>
+        <item>Canara Bank</item>
+        <item>Central Bank of India</item>
+        <item>Corporation Bank</item>
+        <item>Dena Bank</item>
+        <item>Indian Bank</item>
+        <item>Indian Overseas Bank</item>
+        <item>Oriental Bank of Commerce</item>
+        <item>Punjab National Bank</item>
+        <item>Punjab &amp; Sind Bank</item>
+        <item>Syndicate Bank</item>
+        <item>Union Bank of India</item>
+        <item>United Bank of India</item>
+        <item>UCO Bank</item>
+        <item>Vijaya Bank</item>
+        <item>IDBI Bank Ltd.</item>
+        <item>State Bank of India</item>
+        <item>Allahabad UP Gramin Bank</item>
+        <item>Andhra Pradesh Grameena Vikas Bank</item>
+        <item>Andhra Pragathi Grameena Bank</item>
+        <item>Arunachal Pradesh Rural Bank</item>
+        <item>Assam Gramin Vikash Bank</item>
+        <item>Bangiya Gramin Vikash Bank</item>
+        <item>Baroda Gujarat Gramin Bank</item>
+        <item>Baroda Rajasthan Kshetriya Gramin Bank</item>
+        <item>Baroda UP Gramin Bank</item>
+        <item>Bihar Gramin Bank</item>
+        <item>Central Madhya Pradesh Gramin Bank</item>
+        <item>Chaitanya Godavari Grameena Bank</item>
+        <item>Chhattisgarh Rajya Gramin Bank</item>
+        <item>Dena Gujarat Gramin Bank</item>
+        <item>Ellaquai Dehati Bank</item>
+        <item>Gramin Bank of Aryavart</item>
+        <item>Himachal Pradesh Gramin Bank</item>
+        <item>J&amp;K Grameen Bank</item>
+        <item>Jharkhand Gramin Bank</item>
+        <item>Karnataka Vikas Grameena Bank</item>
+        <item>Kashi Gomti Samyut Gramin Bank</item>
+        <item>Kaveri Grameena Bank</item>
+        <item>Kerala Gramin Bank</item>
+        <item>Langpi Dehangi Rural Bank</item>
+        <item>Madhyanchal Gramin Bank</item>
+        <item>Madhya Bihar Gramin Bank</item>
+        <item>Maharashtra Gramin Bank</item>
+        <item>Malwa Gramin Bank</item>
+        <item>Manipur Rural Bank</item>
+        <item>Meghalaya Rural Bank</item>
+        <item>Mizoram Rural Bank</item>
+        <item>Nagaland Rural Bank</item>
+        <item>Narmada Jhabua Gramin Bank</item>
+        <item>Odisha Gramya Bank</item>
+        <item>Pallavan Grama Bank</item>
+        <item>Pandyan Grama Bank</item>
+        <item>Paschim Banga Gramin Bank</item>
+        <item>Pragathi Krishna Gramin Bank</item>
+        <item>Prathama Bank</item>
+        <item>Puduvai Bharthiar Grama Bank</item>
+        <item>Punjab Gramin Bank</item>
+        <item>Purvanchal Bank</item>
+        <item>Rajasthan Marudhara Gramin Bank</item>
+        <item>Saptagiri Grameena Bank</item>
+        <item>Sarva Haryana Gramin Bank</item>
+        <item>Sarva UP Gramin Bank</item>
+        <item>Saurashtra Gramin Bank</item>
+        <item>Sutlej Gramin Bank</item>
+        <item>Telangana Grameena Bank</item>
+        <item>Tripura Gramin Bank</item>
+        <item>Utkal Grameen Bank</item>
+        <item>Uttar Banga Kshetriya Gramin Bank</item>
+        <item>Uttar Bihar Gramin Bank</item>
+        <item>Uttarakhand Gramin Bank</item>
+        <item>Vananchal Gramin Bank</item>
+        <item>Vidharbha Konkan Gramin Bank</item>
+        <item>Axis Bank</item>
+        <item>Bandhan Bank</item>
+        <item>CSB Bank</item>
+        <item>City Union Bank</item>
+        <item>DCB Bank</item>
+        <item>Dhanlaxmi Bank</item>
+        <item>Federal Bank</item>
+        <item>HDFC Bank</item>
+        <item>ICICI Bank</item>
+        <item>IndusInd Bank</item>
+        <item>IDFC FIRST Bank</item>
+        <item>Jammu &amp; Kashmir Bank</item>
+        <item>Karnataka Bank</item>
+        <item>Karur Vysya Bank</item>
+        <item>Kotak Mahindra Bank</item>
+        <item>Lakshmi Vilas Bank</item>
+        <item>Nainital bank</item>
+        <item>RBL Bank</item>
+        <item>South Indian Bank</item>
+        <item>Tamilnad Mercantile Bank</item>
+        <item>YES Bank</item>
+        <item>IDBI Bank</item>
+        <item>Ujjivan Small Finance Bank</item>
+        <item>Jana Small Finance Bank</item>
+        <item>Equitas Small Finance Bank</item>
+        <item>AU Small Finance Bank</item>
+        <item>Capital Small Finance Bank</item>
+        <item>Fincare Small Finance Bank</item>
+        <item>ESAF Small Finance Bank</item>
+        <item>North East Small Finance Bank</item>
+        <item>Suryoday Small Finance Bank</item>
+        <item>Utkarsh Small Finance Bank</item>
+        <item>Shivalik Small Finance Bank</item>
+        <item>Airtel Payments Bank Ltd</item>
+        <item>India Post Payments Bank Ltd</item>
+        <item>FINO Payments Bank Ltd</item>
+        <item>Paytm Payments Bank Ltd</item>
+        <item>Jio Payments Bank Ltd</item>
+        <item>NSDL Payments Bank Limited</item>
+        <item>National Bank for Agriculture and Rural Development</item>
+        <item>Export-Import Bank of India</item>
+        <item>National Housing Bank</item>
+        <item>Small Industries Development Bank of India</item>
+        <item>Australia and New Zealand Banking Group Ltd.</item>
+        <item>National Australia Bank</item>
+        <item>Westpac Banking Corporation</item>
+        <item>Bank of Bahrain &amp; Kuwait BSC</item>
+        <item>AB Bank Ltd.</item>
+        <item>Sonali Bank Ltd.</item>
+        <item>Bank of Nova Scotia</item>
+        <item>Industrial &amp; Commercial Bank of China Ltd.</item>
+        <item>BNP Paribas</item>
+        <item>Credit Agricole Corporate &amp; Investment Bank</item>
+        <item>Societe Generale</item>
+        <item>Deutsche Bank</item>
+        <item>HSBC Ltd</item>
+        <item>PT Bank Maybank Indonesia TBK</item>
+        <item>Mizuho Bank Ltd.</item>
+        <item>Sumitomo Mitsui Banking Corporation</item>
+        <item>MUFG Bank Ltd.</item>
+        <item>Cooperatieve Rabobank U.A.</item>
+        <item>Doha Bank</item>
+        <item>Qatar National Bank SAQ</item>
+        <item>JSC VTB Bank</item>
+        <item>Sberbank</item>
+        <item>DBS Bank Ltd.</item>
+        <item>United Overseas Bank Ltd.</item>
+        <item>FirstRand Bank Ltd.</item>
+        <item>Shinhan Bank</item>
+        <item>Woori Bank</item>
+        <item>KEB Hana Bank</item>
+        <item>Industrial Bank of Korea</item>
+        <item>Bank of Ceylon</item>
+        <item>Credit Suisse A.G</item>
+        <item>CTBC Bank Co.Ltd.</item>
+        <item>Krung Thai Bank Public Co. Ltd.</item>
+        <item>Abu Dhabi Commercial Bank Ltd.</item>
+        <item>Mashreq Bank PSC</item>
+        <item>First Abu Dhabi Bank PJSC</item>
+        <item>Emirates NBD Bank PJSC</item>
+        <item>Barclays Bank Plc.</item>
+        <item>Standard Chartered Bank</item>
+        <item>The Royal Bank of Scotland plc</item>
+        <item>American Express Banking Corp.</item>
+        <item>Bank of America</item>
+        <item>Citi Bank</item>
+        <item>J.P. Morgan Chase Bank N.A.</item>
+        <item>Coastal Local Area Bank Ltd</item>
+        <item>Krishna Bhima Samruddhi LAB Ltd</item>
+        <item>Subhadra Local Bank Ltd</item>
+        <item>Grameen Development Finance Pvt Ltd</item>
+        <item>State Bank of Bikaner and Jaipur</item>
+        <item>Bharatiya Mahila Bank Limited</item>
+    </string-array>
+
+    <!-- Imp: Includes other for kcc and other loan -->
+    <string-array name="bank_name_second">
+        <item>Allahabad Bank</item>
+        <item>Andhra Bank</item>
+        <item>Bank of Baroda</item>
+        <item>Bank of India</item>
+        <item>Bank of Maharashtra</item>
+        <item>Canara Bank</item>
+        <item>Central Bank of India</item>
+        <item>Corporation Bank</item>
+        <item>Dena Bank</item>
+        <item>Indian Bank</item>
+        <item>Indian Overseas Bank</item>
+        <item>Oriental Bank of Commerce</item>
+        <item>Punjab National Bank</item>
+        <item>Punjab &amp; Sind Bank</item>
+        <item>Syndicate Bank</item>
+        <item>Union Bank of India</item>
+        <item>United Bank of India</item>
+        <item>UCO Bank</item>
+        <item>Vijaya Bank</item>
+        <item>IDBI Bank Ltd.</item>
+        <item>State Bank of India</item>
+        <item>Allahabad UP Gramin Bank</item>
+        <item>Andhra Pradesh Grameena Vikas Bank</item>
+        <item>Andhra Pragathi Grameena Bank</item>
+        <item>Arunachal Pradesh Rural Bank</item>
+        <item>Assam Gramin Vikash Bank</item>
+        <item>Bangiya Gramin Vikash Bank</item>
+        <item>Baroda Gujarat Gramin Bank</item>
+        <item>Baroda Rajasthan Kshetriya Gramin Bank</item>
+        <item>Baroda UP Gramin Bank</item>
+        <item>Bihar Gramin Bank</item>
+        <item>Central Madhya Pradesh Gramin Bank</item>
+        <item>Chaitanya Godavari Grameena Bank</item>
+        <item>Chhattisgarh Rajya Gramin Bank</item>
+        <item>Dena Gujarat Gramin Bank</item>
+        <item>Ellaquai Dehati Bank</item>
+        <item>Gramin Bank of Aryavart</item>
+        <item>Himachal Pradesh Gramin Bank</item>
+        <item>J&amp;K Grameen Bank</item>
+        <item>Jharkhand Gramin Bank</item>
+        <item>Karnataka Vikas Grameena Bank</item>
+        <item>Kashi Gomti Samyut Gramin Bank</item>
+        <item>Kaveri Grameena Bank</item>
+        <item>Kerala Gramin Bank</item>
+        <item>Langpi Dehangi Rural Bank</item>
+        <item>Madhyanchal Gramin Bank</item>
+        <item>Madhya Bihar Gramin Bank</item>
+        <item>Maharashtra Gramin Bank</item>
+        <item>Malwa Gramin Bank</item>
+        <item>Manipur Rural Bank</item>
+        <item>Meghalaya Rural Bank</item>
+        <item>Mizoram Rural Bank</item>
+        <item>Nagaland Rural Bank</item>
+        <item>Narmada Jhabua Gramin Bank</item>
+        <item>Odisha Gramya Bank</item>
+        <item>Pallavan Grama Bank</item>
+        <item>Pandyan Grama Bank</item>
+        <item>Paschim Banga Gramin Bank</item>
+        <item>Pragathi Krishna Gramin Bank</item>
+        <item>Prathama Bank</item>
+        <item>Puduvai Bharthiar Grama Bank</item>
+        <item>Punjab Gramin Bank</item>
+        <item>Purvanchal Bank</item>
+        <item>Rajasthan Marudhara Gramin Bank</item>
+        <item>Saptagiri Grameena Bank</item>
+        <item>Sarva Haryana Gramin Bank</item>
+        <item>Sarva UP Gramin Bank</item>
+        <item>Saurashtra Gramin Bank</item>
+        <item>Sutlej Gramin Bank</item>
+        <item>Telangana Grameena Bank</item>
+        <item>Tripura Gramin Bank</item>
+        <item>Utkal Grameen Bank</item>
+        <item>Uttar Banga Kshetriya Gramin Bank</item>
+        <item>Uttar Bihar Gramin Bank</item>
+        <item>Uttarakhand Gramin Bank</item>
+        <item>Vananchal Gramin Bank</item>
+        <item>Vidharbha Konkan Gramin Bank</item>
+        <item>Axis Bank</item>
+        <item>Bandhan Bank</item>
+        <item>CSB Bank</item>
+        <item>City Union Bank</item>
+        <item>DCB Bank</item>
+        <item>Dhanlaxmi Bank</item>
+        <item>Federal Bank</item>
+        <item>HDFC Bank</item>
+        <item>ICICI Bank</item>
+        <item>IndusInd Bank</item>
+        <item>IDFC FIRST Bank</item>
+        <item>Jammu &amp; Kashmir Bank</item>
+        <item>Karnataka Bank</item>
+        <item>Karur Vysya Bank</item>
+        <item>Kotak Mahindra Bank</item>
+        <item>Lakshmi Vilas Bank</item>
+        <item>Nainital bank</item>
+        <item>RBL Bank</item>
+        <item>South Indian Bank</item>
+        <item>Tamilnad Mercantile Bank</item>
+        <item>YES Bank</item>
+        <item>IDBI Bank</item>
+        <item>Ujjivan Small Finance Bank</item>
+        <item>Jana Small Finance Bank</item>
+        <item>Equitas Small Finance Bank</item>
+        <item>AU Small Finance Bank</item>
+        <item>Capital Small Finance Bank</item>
+        <item>Fincare Small Finance Bank</item>
+        <item>ESAF Small Finance Bank</item>
+        <item>North East Small Finance Bank</item>
+        <item>Suryoday Small Finance Bank</item>
+        <item>Utkarsh Small Finance Bank</item>
+        <item>Shivalik Small Finance Bank</item>
+        <item>Airtel Payments Bank Ltd</item>
+        <item>India Post Payments Bank Ltd</item>
+        <item>FINO Payments Bank Ltd</item>
+        <item>Paytm Payments Bank Ltd</item>
+        <item>Jio Payments Bank Ltd</item>
+        <item>NSDL Payments Bank Limited</item>
+        <item>National Bank for Agriculture and Rural Development</item>
+        <item>Export-Import Bank of India</item>
+        <item>National Housing Bank</item>
+        <item>Small Industries Development Bank of India</item>
+        <item>Australia and New Zealand Banking Group Ltd.</item>
+        <item>National Australia Bank</item>
+        <item>Westpac Banking Corporation</item>
+        <item>Bank of Bahrain &amp; Kuwait BSC</item>
+        <item>AB Bank Ltd.</item>
+        <item>Sonali Bank Ltd.</item>
+        <item>Bank of Nova Scotia</item>
+        <item>Industrial &amp; Commercial Bank of China Ltd.</item>
+        <item>BNP Paribas</item>
+        <item>Credit Agricole Corporate &amp; Investment Bank</item>
+        <item>Societe Generale</item>
+        <item>Deutsche Bank</item>
+        <item>HSBC Ltd</item>
+        <item>PT Bank Maybank Indonesia TBK</item>
+        <item>Mizuho Bank Ltd.</item>
+        <item>Sumitomo Mitsui Banking Corporation</item>
+        <item>MUFG Bank Ltd.</item>
+        <item>Cooperatieve Rabobank U.A.</item>
+        <item>Doha Bank</item>
+        <item>Qatar National Bank SAQ</item>
+        <item>JSC VTB Bank</item>
+        <item>Sberbank</item>
+        <item>DBS Bank Ltd.</item>
+        <item>United Overseas Bank Ltd.</item>
+        <item>FirstRand Bank Ltd.</item>
+        <item>Shinhan Bank</item>
+        <item>Woori Bank</item>
+        <item>KEB Hana Bank</item>
+        <item>Industrial Bank of Korea</item>
+        <item>Bank of Ceylon</item>
+        <item>Credit Suisse A.G</item>
+        <item>CTBC Bank Co.Ltd.</item>
+        <item>Krung Thai Bank Public Co. Ltd.</item>
+        <item>Abu Dhabi Commercial Bank Ltd.</item>
+        <item>Mashreq Bank PSC</item>
+        <item>First Abu Dhabi Bank PJSC</item>
+        <item>Emirates NBD Bank PJSC</item>
+        <item>Barclays Bank Plc.</item>
+        <item>Standard Chartered Bank</item>
+        <item>The Royal Bank of Scotland plc</item>
+        <item>American Express Banking Corp.</item>
+        <item>Bank of America</item>
+        <item>Citi Bank</item>
+        <item>J.P. Morgan Chase Bank N.A.</item>
+        <item>Coastal Local Area Bank Ltd</item>
+        <item>Krishna Bhima Samruddhi LAB Ltd</item>
+        <item>Subhadra Local Bank Ltd</item>
+        <item>Grameen Development Finance Pvt Ltd</item>
+        <item>State Bank of Bikaner and Jaipur</item>
+        <item>Bharatiya Mahila Bank Limited</item>
+        <item>Capital First Limited</item>
+        <item>India Infoline Finance Limited</item>
+        <item>L&amp;T Finance Limited</item>
+        <item>Motilal Oswal Financial Services Limited</item>
+        <item>HDB Financial Services Limited</item>
+        <item>Reliance Capital Limited</item>
+        <item>Tata Capital Financial Services Limited</item>
+        <item>Fullerton India Credit Company Limited</item>
+        <item>Religare Enterprises Limited</item>
+        <item>Magma Fincorp Limited</item>
+        <item>Muthoot Fincorp Limited</item>
+        <item>L&amp;T Infrastructure Finance Company Limited</item>
+        <item>Shriram Transport Finance Company Limited</item>
+        <item>Mahindra &amp; Mahindra Financial Services Limited</item>
+        <item>Vistaar Financial Services Private Limited</item>
+        <item>SREI Infrastructure Finance Limited</item>
+        <item>JM Financial Limited</item>
+        <item>JM Financial Credit Solutions Limited</item>
+        <item>Tata Motors Finance Limited</item>
+        <item>Cholamandalam Investment and Finance Company Limited</item>
+        <item>Hinduja Leyland Finance Limited</item>
+        <item>IL&amp;FS Financial Services Limited</item>
+        <item>Satin Creditcare Network Limited</item>
+        <item>Balmer Lawrie Investments Limited</item>
+        <item>Manappuram Finance Limited</item>
+        <item>Muthoot Finance Limited</item>
+        <item>Shriram City Union Finance Limited</item>
+        <item>Religare Finvest Limited</item>
+        <item>Rural Electrification Corporation Limited</item>
+        <item>IndoStar Capital Finance Limited</item>
+        <item>Nabard Financial Services Limited</item>
+        <item>Power Finance Corporation Limited</item>
+        <item>Ujjivan Financial Services Limited</item>
+        <item>LKP Finance Limited</item>
+        <item>Aditya Birla Finance Limited</item>
+        <item>Bajaj Finance Limited</item>
+        <item>Indian Renewable Energy Development Agency Limited</item>
+        <item>Intec Capital Limited</item>
+        <item>IFCI Limited</item>
+        <item>India Infrastructure Finance Company Limited</item>
+        <item>Sundaram Finance Limited</item>
+        <item>Family Credit Limited</item>
+        <item>Sakthi Finance Limited</item>
+        <item>Axis Finance Limited</item>
+        <item>Muthoot Capital Services Limited</item>
+        <item>Indian Railway Finance Corporation Limited</item>
+        <item>The National Small Industries Corporation Limited</item>
+        <item>SICOM Limited</item>
+        <item>STCI Primary Dealer Limited</item>
+        <item>PNB Gilts Limited</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="action_settings">Settings &amp; Privacy</string>
+    <string name="profile_desc">Rowan Sebastian Atkinson CBE is an English actor,  comedian and screenwriter</string>
+    <string name="profile_title">Mr Bean</string>
+    <string name="posts">posts</string>
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+    <string name="msg_error_unable_select_profile_pic">Unable to set profile image. Please try again!</string>
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+
+    <!-- font families -->
+    <string name="font_family_light">sans-serif-light</string>
+    <string name="font_family_medium">sans-serif-medium</string>
+    <string name="font_family_regular">sans-serif</string>
+    <string name="font_family_condensed">sans-serif-condensed</string>
+    <string name="font_family_black">sans-serif-black</string>
+    <string name="font_family_thin">sans-serif-thin</string>
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+</resources>

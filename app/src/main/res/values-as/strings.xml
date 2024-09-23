@@ -1,0 +1,379 @@
+<resources>
+    <string name="app_name">Farm Infinity</string>
+
+    <string name="take_photo">Take Photo</string>
+    <string name="start_capture">Start Capture</string>
+    <string name="stop_capture">Stop Capture</string>
+    <string name="warning">GPS is not enabled.</string>
+
+    <string name="resend"><u>পুনৰ প্ৰেৰণ কৰক</u></string>
+    <string name="lbl_rad_btn_farmer"><u>কৃষক</u></string>
+    <string name="lbl_rad_btn_officer"><u>বিষয়া</u></string>
+    <string name="hnt_et_username"><u>পঞ্জীভুক্ত ফোন নম্বৰ</u></string>
+    <string name="hnt_et_otp"><u>অটিপি</u></string>
+    <string name="hnt_username"><u>ব্যৱহাৰকাৰী-পৰিচয়</u></string>
+    <string name="hnt_password"><u>পাছৱাৰ্ড</u></string>
+    <string name="lbl_signup">ছাইন-আপ কৰক</string>
+    <string name="lbl_hint_first_name">First</string>
+    <string name="lbl_hint_middle_name">Middle</string>
+    <string name="lbl_hint_last_name">Last</string>
+    <!--<string name="Login">লগইন কৰক</string>-->
+    <string name="lbl_fpo">এফপিঅ</string>
+    <string name="lbl_agent">এজেন্ট</string>
+    <string name="lbl_privacy_policy_link">By Signing In, you agree to the terms of use and privacy policy. Please visit the below link for more information.</string>
+    <string name="lbl_pp_link">Privacy Policy</string>
+    <string name="error_message_blank_field">খালী হব নোৱাৰে</string>
+    <string name="error_message_invalid_phone_no">অবৈধ ফোন নম্বৰ</string>
+    <string name="error_message_invalid_email">অবৈধ ইমেইল</string>
+    <string name="error_message_invalid_input">অবৈধ ইনপুট</string>
+
+    <string name="error_msg_pswd_len">পাছৱৰ্ড ৮ ৰ পৰা ১৬ টা বৰ্ণৰ ভিতৰত হব লাগিব</string>
+    <string name="error_msg_pswd_match">পাছৱাৰ্ড মিলা নাই</string>
+    <string name="error_msg_session_expired">অধিৱেশনৰ ম্যাদ উকলিছে। অনুগ্ৰহ কৰি পুনৰ লগইন কৰক।</string>
+    <string name="error_msg_logged_out">আপুনি লগ আউট কৰিছে</string>
+    <string name="error_msg_feature_not_available">বৈশিষ্ট্য উপলব্ধ নহয়</string>
+    <string name="error_msg_app_update">কিছুমান সুবিধা সুচাৰুৰূপে কাম কৰাৰ বাবে আমাক অনুমতিৰ প্ৰয়োজন</string>
+    <string name="error_msg_app_restart">অনুগ্ৰহ কৰি এপ্লিকেচন পুনৰাৰম্ভ কৰক</string>
+    <string name="msg_enter_otp">আপুনি এবাৰ অটিপি প্ৰাপ্ত কৰাৰ পিছত প্ৰবিষ্ট কৰক</string>
+    <string name="err_msg_login_officer">অনুগ্ৰহ কৰি ব্যৱহাৰকাৰী নাম আৰু পাছৱৰ্ড প্ৰবিষ্ট কৰক</string>
+    <string name="err_msg_login_farmer">অবৈধ মবাইল নম্বৰ/অটিপি</string>
+    <string name="msg_level_one_complete_farmer">ছাইন আপ/পঞ্জীয়নৰ সময়ত প্ৰদান কৰা ফোন নম্বৰৰ সৈতে লগইনৰ দ্বাৰা বাকী প্ৰপত্ৰবোৰ অব্যাহত ৰাখক।</string>
+    <string name="error_msg_loc">অৱস্থান প্ৰাপ্ত কৰিব পৰা নগল। পুনৰ চেষ্টা কৰা।</string>
+    <string name="error_msg_farmer_declaration">কৃষকৰ ঘোষণা চেকবক্স পৰীক্ষা কৰক</string>
+    <string name="error_msg_officer_declaration">বিষয়াৰ ঘোষণা চেকবক্স পৰীক্ষা কৰক</string>
+    <string name="err_msg_gender">লিঙ্গ বাছনি কৰক</string>
+    <string name="err_msg_area_units">একক নিৰ্বাচন কৰক</string>
+    <string name="err_msg_state">ৰাজ্য নিৰ্বাচন কৰক</string>
+    <string name="err_msg_pin">পিন নম্বৰ ৬ টা সংখ্যা ৰ হব লাগিব</string>
+    <string name="err_msg_amount">ঋণৰ পৰিমাণ বাছনি কৰক</string>
+    <string name="err_msg_loan_purpose">ঋণৰ উদ্দেশ্য বাছনি কৰক</string>
+    <string name="err_msg_age">বয়স ১৮ ৰ পৰা ৫৭ বছৰৰ ভিতৰত হব লাগিব</string>
+    <string name="err_msg_irr_fclty">জলসিঞ্চন সুবিধাৰ পৰা কমেও এটা পৰীক্ষা কৰক</string>
+    <string name="err_msg_farm_equip">ফাৰ্ম সঁজুলিৰ পৰা কমেও এটা পৰীক্ষা কৰক</string>
+    <string name="err_msg_livestock">পশুধনৰ পৰা কমেও এটা পৰীক্ষা কৰক</string>
+    <string name="err_msg_rabi_crp">ৰবি শস্যৰ পৰা কমেও এটা পৰীক্ষা কৰক</string>
+    <string name="err_msg_kharif_crp">খাৰিফ শস্যৰ পৰা কমেও এটা পৰীক্ষা কৰক</string>
+    <string name="err_msg_summer_crp">গ্ৰীষ্মকালীন শস্যৰ পৰা কমেও এটা পৰীক্ষা কৰক</string>
+    <string name="err_msg_plantation_crp_area">বৃক্ষৰোপণৰ ক্ষেত্ৰ মুঠ খেতিপথাৰৰ এলেকাতকৈ কম হব লাগিব</string>
+    <string name="err_msg_plantation_crp">কমেও এটা বৃক্ষৰোপণ খেতিৰ শস্য পৰীক্ষা কৰক</string>
+    <string name="err_msg_doc_name_match">নথিপত্ৰত থকা নাম টো আবেদনকাৰীৰ নামৰ সৈতে মিলা নাছিল</string>
+    <string name="err_msg_masked_image">মুখা পিন্ধা ছবিখন প্ৰাপ্ত কৰিবলৈ ব্যৰ্থ হৈছে। পুনৰ চেষ্টা কৰা</string>
+    <string name="err_msg_aadhar_back">অনুগ্ৰহ কৰি আধাৰ কাৰ্ডৰ পিছফালটো আপলোড কৰক</string>
+    <string name="err_msg_passport_name_match">পাছপোৰ্ট বৈধকৰণত বিফল হৈছে। নাম মিলা নাছিল।</string>
+    <string name="err_msg_passport_number">পাছপোৰ্ট বৈধকৰণত বিফল হৈছে</string>
+    <string name="err_msg_voter_id_name_match">ভোটাৰ আইডি বৈধকৰণত বিফল হৈছে। নাম মিলা নাছিল।</string>
+    <string name="err_msg_voter_id_number">ভোটাৰ আইডি বৈধকৰণত বিফল হৈছে</string>
+    <string name="err_msg_dl_name_match">ড্ৰাইভিং লাইচেঞ্চ বৈধকৰণত বিফল হৈছে। নাম মিলা নাছিল।</string>
+    <string name="err_msg_dl_number">ড্ৰাইভিং লাইচেঞ্চ বৈধকৰণত বিফল হৈছে</string>
+    <string name="err_msg_pan_name_match">পেন বৈধকৰণত বিফল হৈছে। নাম মিলা নাছিল।</string>
+    <string name="err_msg_pan_number">পেন বৈধকৰণত বিফল হৈছে</string>
+    <string name="err_msg_invalid_aadhaar">অবৈধ আধাৰ নম্বৰ</string>
+    <string name="err_msg_invalid_pan">অবৈধ পেন নম্বৰ</string>
+    <string name="err_msg_invalid_dl">অবৈধ ড্ৰাইভিং লাইচেঞ্চ নম্বৰ</string>
+    <string name="err_msg_invalid_passport">অবৈধ পাছপোৰ্ট ফাইল নম্বৰ</string>
+    <string name="err_msg_invalid_voter_id">অবৈধ ভোটাৰ পৰিচয় নম্বৰ</string>
+    <string name="msg_aadhaar_prompt">আপোনাৰ আধাৰ আপোনাৰ ওচৰত ৰাখক আৰু অব্যাহত ৰাখিবলৈ OK টিপক।</string>
+    <string name="err_msg_doc_varifation">কিবা ভুল হৈছে। বৈধ কৰিব পৰা নগল</string>
+    <string name="err_msg_ifsc_code">আই.এফ.এছ.চি. কোড ১১ টা আখৰৰ হব লাগিব</string>
+    <string name="err_msg_acc_no">একাউণ্ট নম্বৰ 6 টা বৰ্ণতকৈ ডাঙৰ হব লাগে</string>
+    <string name="err_msg_family_member">সৰ্বাধিক ১৫ জন সদস্য অনুমোদিত</string>
+    <string name="err_msg_pan_checked">পেন উপলব্ধ চেকবক্স পৰীক্ষা কৰা হৈছে। পৰিচয়ৰ প্ৰমাণ হিচাপে অনুগ্ৰহ কৰি পেন কাৰ্ড বাছনি কৰক।</string>
+    <string name="err_msg_dbt_empty">ডিবিটি একাউণ্ট নম্বৰ খালী হব নোৱাৰে</string>
+    <string name="err_msg_select_doc_name">নথিপত্ৰ নাম এটা বাছক</string>
+    <string name="err_msg_select_loan_type">ঋণৰ ধৰণ বাছনি কৰক</string>
+    <string name="err_msg_select_tenure">কাৰ্যকাল নিৰ্বাচন কৰক</string>
+    <string name="err_msg_id_proof_select">পৰিচয় প্ৰমাণ নথিপত্ৰ নাম বাছক</string>
+    <string name="err_msg_add_proof_select">ঠিকনা প্ৰমাণ নথিপত্ৰৰ নাম বাছক</string>
+    <string name="err_msg_land_proof_select">মাটিৰ কাগজ নাম বাছক</string>
+    <string name="err_msg_valid_poi">অনুগ্ৰহ কৰি এটা বৈধ পৰিচয় প্ৰমাণ নথিপত্ৰ নম্বৰ প্ৰবিষ্ট কৰক</string>
+    <string name="err_msg_valid_poa">অনুগ্ৰহ কৰি এটা বৈধ ঠিকনা প্ৰমাণ নথিপত্ৰ নম্বৰ প্ৰবিষ্ট কৰক</string>
+
+    <string name="resend_otp">অটিপি পুনৰ প্ৰেৰণ কৰক?</string>
+    <string name="forgot_pswd">পাছৱাৰ্ড পাহৰি গল?</string>
+
+    <string name="error_network_timeout">Request time out</string>
+    <string name="splash_footer">&#169;2020 farmeasytechnologies</string>
+
+    <string name="login_screen_bottom_text">নতুন কৃষক উৎপাদক সংস্থা (এফপিঅ) আৰু এজেণ্ট পঞ্জীয়নৰ বাবে তলৰ সংশ্লিষ্ট লিংকত ক্লিক কৰক</string>
+
+    <string name="gen_cred">Click here to generate farmer login credential\n(Optional)</string>
+
+    <string name="ddl_english">English</string>
+    <string name="ddl_hindi">Hindi-हिंदी</string>
+    <string name="ddl_assamese">Assamese-অসমীয়া</string>
+
+    <string name="ddl_male">Male</string>
+    <string name="ddl_female">Female</string>
+
+    <string name="ddl_unit_Acre">Acre</string>
+    <string name="ddl_unit_Bhigha">Bigha</string>
+
+    <string name="lbl_dashboard_add_btn">গ্রাহক যোগ কৰক</string>
+    <string name="lbl_dashboard_add_text">কৃষকৰ বিৱৰণ যোগ কৰক</string>
+    <string name="lbl_dashboard_edit_btn">সম্পাদনা/সন্ধান কৰক</string>
+    <string name="lbl_dashboard_edit_text">সন্ধান কৰক &amp; কৃষকৰ তথ্য সম্পাদনা কৰক</string>
+    <string name="lbl_dashboard_recent_btn">শেহতীয়া</string>
+    <string name="lbl_dashboard_recent_text">শেহতীয়াকৈ যোগ কৰা গ্ৰাহক</string>
+    <string name="lbl_dashboard_setting_btn">সংহতি</string>
+    <string name="lbl_dashboard_setting_text">সঞ্চিত, পুনৰুদ্ধাৰ, ভাষা</string>
+    <string name="lbl_dashboard_reports_btn">প্ৰতিবেদন</string>
+    <string name="lbl_dashboard_reports_text">প্ৰতিবেদন সৃষ্টি কৰক</string>
+
+    <string name="lbl_choose_language">ভাষা বাছক</string>
+    <string name="lbl_home">ঘৰ</string>
+    <string name="lbl_setting">সংহতি</string>
+    <string name="lbl_reset_password">পুনৰ পাছৱাৰ্ড সংহতি কৰক</string>
+    <string name="lbl_logout">লগ আউট</string>
+    <string name="lbl_language">ভাষা</string>
+    <string name="lbl_password_management">পাছৱাৰ্ড ব্যৱস্থাপনা</string>
+    <string name="lbl_change_password">পাছৱাৰ্ড পৰিবৰ্তন কৰক</string>
+    <string name="lbl_memory_management">Memory Management</string>
+    <string name="lbl_clear_cache">Clear Cache</string>
+    <string name="lbl_share_app">এজন বন্ধুক নিমন্ত্ৰণ কৰক</string>
+    <string name="lbl_about">About</string>
+    <string name="lbl_about_text">ফাৰ্ম ইনফিনিটি (ফাৰ্মাৰ প্ৰয়োগ ব্যৱস্থাপনা এপ্প)</string>
+    <string name="lbl_version">Version 1.7.1</string>
+    <string name="lbl_privacy_policy">গোপনীয়তা নীতি</string>
+    <string name="lbl_term_con">Terms and Condt.</string>
+    <string name="lbl_hint_old_pswd">পুৰণি পাছৱাৰ্ড</string>
+    <string name="lbl__hint_new_pswd">নতুন পাছৱাৰ্ড</string>
+    <string name="lbl_hint_confirm_pswd">পাছৱাৰ্ড নিশ্চিত কৰক</string>
+    <string name="lbl_recently_added">শেহতীয়াকৈ যোগ কৰা হৈছে</string>
+    <string name="lbl_edit_search">সম্পাদনা/সন্ধান কৰক</string>
+    <string name="lbl_edit_prefrences">পছন্দসমূহ সম্পাদনা কৰক</string>
+
+    <string name="lbl_share_msg">কৃষক আৰু কৃষি ব্যৱসায়ৰ বাবে সহজ আৰু সুলভ বিত্তীয় সেৱাএতিয়া "ফাৰ্ম ইনফিনিটি"  এপ্পত প্ৰযোজ্য হয়। এপ্পটোৰ লিংক তলত দিয়া হৈছে।</string>
+    <string name="lbl_thank_msg">ধন্যবাদ। আপোনাৰ দিনটো শুভ হওক।</string>
+
+    <string name="lbl_application_id">আবেদন নম্বৰ</string>
+    <string name="lbl_first_name">নাম</string>
+    <string name="lbl_middle_name">মধ্য নাম</string>
+    <string name="lbl_last_name">উপাধি</string>
+    <string name="lbl_date_of_birth">জন্মৰ তাৰিখ</string>
+    <string name="lbl_age">বয়স</string>
+    <string name="lbl_gender">লিঙ্গ</string>
+    <string name="lbl_father_name">পিতৃৰ নাম</string>
+    <string name="lbl_married">যদি বিবাহিত পত্নীৰ নাম উল্লেখ কৰক</string>
+    <string name="lbl_phone_no">ফোন নম্বৰ (বেঙ্ক ৰেকৰ্ড অনুসৰি)</string>
+    <string name="lbl_alt_phone_no">বৈকল্পিক ফোন নম্বৰ</string>
+    <string name="lbl_email">ইমেইল</string>
+    <string name="lbl_address_line_1">স্থায়ী ঠিকনা ৰেখা ১</string>
+    <string name="lbl_address_line_2">স্থায়ী ঠিকনা ৰেখা ২</string>
+    <string name="lbl_village">গাওঁ</string>
+    <string name="lbl_city_town">মহানগৰ/নগৰ</string>
+    <string name="lbl_district">জিলা</string>
+    <string name="lbl_pin">পিন</string>
+    <string name="lbl_state">ৰাজ্য</string>
+    <string name="lbl_loan_amt">প্ৰয়োজনীয় ঋণৰ পৰিমাণ</string>
+    <string name="lbl_loan_purpose">ঋণৰ উদ্দেশ্য</string>
+    <string name="lbl_loan_remarks">ঋণ মন্তব্য</string>
+    <string name="lbl_gps">জিপিএছ অৱস্থান</string>
+    <string name="lbl_hint_long_lat">দ্ৰাঘিমাংশ/অক্ষাংশ</string>
+    <string name="cb_agree">মই সন্মত যে মই তলত উল্লেখ কৰা চৰ্তাৱলী আৰু চৰ্তাৱলী পঢ়িছোঁ, আৰু ঘোষণা কৰিছো যে মই দিয়া তথ্যমোৰ জ্ঞানৰ সৈতে সঁচা।</string>
+
+    <string name="lbl_is_fpo">এফপিঅ/এফপিচিৰ কৃষক সদস্য নেকি?</string>
+    <string name="lbl_fpo_name">এফপিও/এফপিচি নাম</string>
+    <string name="lbl_fpo_not_in_list">এফপিও/এফপিচিৰ  নাম তালিকাত আ‍‍‍‍‍ছ‍ে নে নাই চেকবক্সত  পৰীক্ষা কৰক</string>
+    <string name="lbl_fpo_code">এফপিও/এফপিচি কোড</string>
+    <string name="lbl_family_member_count">পৰিয়ালৰ সদস্যৰ সংখ্যা</string>
+    <string name="lbl_bank_details">বেঙ্কৰ বিৱৰণ (ডিবিটিৰ বাবে)</string>
+    <string name="lbl_acc_no">একাওন্ট নম্বৰ</string>
+    <string name="lbl_bank_name">বেংকৰ নাম</string>
+    <string name="lbl_ifsc">আই.এফ.এছ.চি. কোড</string>
+    <string name="lbl_passbook_photo">পাছবুক ফটো</string>
+    <string name="lbl_kcc">কেচিচি আঁচনি</string>
+    <string name="lbl_hold_kcc">আপোনাৰ কেচিচি ঋণ আ‌‌ছে নেকি?</string>
+    <string name="lbl_loan_type">ঋণৰ প্ৰকাৰ</string>
+    <string name="lbl_k_acc_no">একাওন্ট নম্বৰ</string>
+    <string name="lbl_k_namk_name">বেংকৰ নাম</string>
+    <string name="lbl_k_ifsc">আই.এফ.এছ.চি. কোড</string>
+    <string name="lbl_k_tenure">কাৰ্যকাল (মাহত)</string>
+    <string name="lbl_annual_obligation">বাৰ্ষিক বাধ্যবাধকতা</string>
+    <string name="lbl_insurance">বীমা আঁচনি</string>
+    <string name="lbl_hold_insurence">আপোনাৰ শস্য/পশুধন বীমা আছে নেকি?</string>
+    <string name="lbl_other_loan">অন্যান্য ঋণ</string>
+    <string name="lbl_avail_other_loan">আপুনি আন কোনো ঋণ লাভ কৰিছিল নে?</string>
+    <string name="lbl_other_loan_type">ঋণৰ প্ৰকাৰ</string>
+    <string name="lbl_other_loan_Account_no">একাওন্ট নম্বৰ</string>
+    <string name="lbl_other_loan_bank_name">বেংকৰ নাম</string>
+    <string name="lbl_other_loan_ifsc">আই.এফ.এছ.চি. কোড</string>
+    <string name="lbl_other_loan_amt">ঋণৰ পৰিমাণ</string>
+    <string name="lbl_other_loan_tenure">কাৰ্যকাল (মাহত)</string>
+    <string name="lbl_other_loan_obligation">বাৰ্ষিক বাধ্যবাধকতা</string>
+    <string name="lbl_doc_need">নথিপত্ৰৰ প্ৰয়োজন</string>
+    <string name="lbl_passport_size_photo">পাছপোৰ্ট আকাৰৰ ফটো</string>
+    <string name="lbl_pan_card">পেন কাৰ্ড (উপলব্ধ)</string>
+    <string name="lbl_poi">পৰিচয়ৰ প্ৰমাণ</string>
+    <string name="lbl_poa">ঠিকনাৰ প্ৰমাণ</string>
+    <string name="lbl_land_doc">মাটিৰ কাগজ(যিকোনো)</string>
+    <string name="lbl_contact">যোগাযোগ কৰিব বিচাৰে নেকি?</string>
+
+    <string name="lbl_land_holdings">ভূমি ধাৰণ</string>
+    <string name="lbl_land_area_unit">ইন (ড্ৰপডাউন তালিকাৰ পৰা বাছনি কৰক।)</string>
+    <string name="lbl_land_area">মুঠ কৃষিভূমি, যাৰ ভিতৰত আছে বৃক্ষৰোপণ এলেকা</string>
+    <string name="lbl_irrigation_facility">জলসিঞ্চন সুবিধা</string>
+    <string name="lbl_drip_irrigation">ড্ৰিপ জলসিঞ্চন</string>
+    <string name="lbl_river_cannal">ওচৰৰ নদী/খাল</string>
+    <string name="lbl_hydroponics">হাইড্ৰপনিক্স</string>
+    <string name="lbl_sprinklers">স্প্ৰিঙ্কলাৰ</string>
+    <string name="lbl_rainfed">বৰষুণৰ পানী</string>
+    <string name="lbl_water_pumps">পানীৰ পাম্প</string>
+    <string name="lbl_rain_pond">বৰষুণৰ পানী সংগ্ৰহ/পুখুৰী</string>
+    <string name="lbl_solar_water_pumps">সৌৰ পানীৰ পাম্প</string>
+    <string name="lbl_other">অন্যান্য</string>
+    <string name="lbl_farm_equipment">খেতিৰ সঁজুলি</string>
+    <string name="lbl_harvester">হাৰ্ভেষ্টাৰ</string>
+    <string name="lbl_seeder">চিডাৰ</string>
+    <string name="lbl_plough">হাল-গৰু চালিত</string>
+    <string name="lbl_tractor">ট্ৰেক্টৰ</string>
+    <string name="lbl_power_tiller">পাৱাৰ টিলাৰ</string>
+    <string name="lbl_weeder">ঘাঁহ কটা সঁজুলি</string>
+    <string name="lbl_farm_storage_facility">শস্য সংৰক্ষণ সুবিধা উপলব্ধ?</string>
+    <string name="lbl_post_harvest_facility">শস্য চপোৱাৰ পিছত সুবিধা উপলব্ধ?</string>
+    <string name="lbl_livestock">পশুধন</string>
+    <string name="lbl_bull">বলধ গৰু</string>
+    <string name="lbl_calf">গৰু পোৱালি</string>
+    <string name="lbl_camel">উট</string>
+    <string name="lbl_cow">গাই গৰু</string>
+    <string name="lbl_duck">হাঁহ</string>
+    <string name="lbl_goat">ছাগলী</string>
+    <string name="lbl_hen">মুর্গী</string>
+    <string name="lbl_horse_mare_mule">ঘোঁৰা/মাইকী ঘোঁৰা/খচ্চৰ</string>
+    <string name="lbl_pig">গাহৰি</string>
+    <string name="lbl_rabbit">শহা পহু</string>
+    <string name="lbl_sheep">ভেড়া</string>
+    <string name="lbl_rabi_crops">ৰবি শস্য</string>
+    <string name="lbl_cash_crop">নগদ শস্য</string>
+    <string name="lbl_cereal_grain">খাদ্যশস্য</string>
+    <string name="lbl_oil_seed">তেলৰ বীজ</string>
+    <string name="lbl_pulses">মাহজাতীয় শস্য</string>
+    <string name="lbl_spices">মচলা</string>
+    <string name="lbl_vegetables">পাচলি</string>
+    <string name="lbl_kharif_crops">খাৰিফ শস্য</string>
+    <string name="lbl_summer_crops">গ্ৰীষ্মকালীন শস্য</string>
+    <string name="lbl_plantation_crops">বৃক্ষৰোপণ শস্য</string>
+    <string name="lbl_plantation_crop">বৃক্ষৰোপণ শস্য</string>
+    <string name="lbl_plantation_crops_area">বৃক্ষৰোপণ এলেকা (একৰত)</string>
+    <string name="lbl_plantation_fruit">বৃক্ষৰোপণ ফল</string>
+    <string name="lbl_medicinal_plant">ঔষধি উদ্ভিদ</string>
+    <string name="lbl_exotic_plant">বিদেশী শস্য</string>
+    <string name="lbl_chemical_fertilizer">ব্যৱহৃত ৰাসায়নিক সাৰ (কেজি/একৰ)</string>
+    <string name="lbl_pesticide">ব্যৱহৃত কীটনাশক (কেজি/একৰ)</string>
+    <string name="lbl_organic_fertilizer">ব্যৱহৃত জৈৱিক সাৰ (কেজি/একৰ)</string>
+
+    <string name="lbl_yes">আছে</string>
+    <string name="lbl_no">নাই</string>
+    <string name="lbl_hint_capital">Enter in CAPITAL</string>
+
+    <string name="privacy_policy_url">https://farminfinity.com/privacy_policy1.html</string>
+    <string name="terms_url">https://farminfinity.com/terms.html</string>
+
+    <string name="lbl_resend_otp">Resend OTP</string>
+
+    <string name="et_hint_first_name">Enter your first name</string>
+    <string name="et_hint_middle_name">Enter your middle name</string>
+    <string name="et_hint_last_name">Enter your last name</string>
+    <string name="et_hint_dob">Enter dob from date picker</string>
+    <string name="et_hint_age">Age</string>
+    <string name="et_hint_farner_name">Enter your father name</string>
+    <string name="et_hint_phone_no">Enter your phone number</string>
+    <string name="et_hint_alt_phone_no">Enter your alternate phone number</string>
+    <string name="et_hint_email">Enter your email id</string>
+    <string name="et_hint_chem_fert">eg 10.0</string>
+    <string name="et_hint_pesticide">eg 10.0</string>
+    <string name="et_hint_organic_fert">eg 10.0</string>
+    <string name="et_hint_dbt_bank_name">Enter bank name</string>
+    <string name="et_hint_dbt_acc_no">Enter acc no.</string>\
+    <string name="et_hint_member_count">Enter no of family member</string>
+    <string name="et_hint_dbt_ifsc">Enter ifsc code</string>
+
+    <string name="lbl_hint_otp">Enter OTP</string>
+    <string name="lbl_hint_reg_Ph_no">Enter your registered Phone No</string>
+    <string name="lbl_hint_new_pswd">Enter new password</string>
+    <string name="lbl_hint_confirm_new_pswd">Confirm new password</string>
+    <string name="lbl_upload_photo">UPLOAD PHOTO</string>
+    <string name="lbl_submit">Submit</string>
+    <string name="lbl_save">Save</string>
+    <string name="lbl_open_cam">Open Camera</string>
+    <string name="lbl_longitude">Longitude: </string>
+    <string name="lbl_latitude">Latitude: </string>
+    <string name="lbl_otp_msg">OTP is valid for 10 minutes</string>
+    <string name="lbl_verify">Verify</string>
+    <string name="lbl_farmer_search">Get Farmer Details</string>
+    <string name="lbl_hint_farmer_search_box">Enter Farmer Id/Name</string>
+    <string name="lbl_text_farmer">Farmer</string>
+    <string name="lbl_text_officer">Officer</string>
+    <string name="et_hint_capture_date">Date</string>
+    <string name="et_hint_gps">Coordinates</string>
+
+    <string name="content_description_cam">Open Camera</string>
+    <string name="content_description_cam_pane">Camera Pane</string>
+    <string name="content_description_ddl">Dropdown List</string>
+    <string name="content_description_gps">GPS</string>
+    <string name="content_description_calendar">Calendar</string>
+    <string name="content_description_logo">Logo</string>
+
+    <string name="lbl_send_otp">Send OTP</string>
+    <string name="lbl_text_and">&amp;</string>
+
+    <string name="farmer_declaration_emp">অটিপি জৰিয়তে বৈধতা প্ৰদান কৰি, আবেদনকাৰীয়ে আবেদনত প্ৰবিষ্ট কৰা তথ্য ঘোষণা কৰে
+        এই মঞ্চৰ বিষয়ে তেওঁৰ জ্ঞানৰ প্ৰতি সঁচা। লগতে আবেদনকাৰীয়ে স্বীকাৰ কৰিছে যে আৱেদন দাখিল কৰা হৈছে,
+        ফাৰ্ম ইনফিনিটিয়ে তেওঁক কোনো ধৰণৰ ঋণ বা অন্যান্য বিত্তীয় সামগ্ৰী বিতৰণ/অনুমোদনৰ নিশ্চয়তা নিদিয়ে।
+        প্ৰদান কৰা অশুদ্ধ/প্ৰৱঞ্চনামূলক তথ্যৰ উদ্ভৱ হোৱা যিকোনো বিবাদৰ বাবে ফাৰ্ম ইনফিনিটি দায়বদ্ধ নহয়।</string>
+
+    <string name="farmer_declaration">মই সন্মত যে এই প্লেটফৰ্মত পূৰণ কৰা তথ্য সৰ্বশ্ৰেষ্ঠলৈকে শুদ্ধ
+        মোৰ জ্ঞান। মই ইয়াৰ দ্বাৰা ঘোষণা কৰোঁ যে মই সলনি কৰা নাই
+        বা এই আবেদন দাখিল কৰোঁতে যিকোনো তথ্য তৈয়াৰ কৰা।</string>
+
+    <string name="officer_declaration">মই সন্মত যে এই প্লেটফৰ্মত পূৰণ কৰা তথ্য আবেদনকাৰীয়ে দিয়া অনুসৰি আৰু শুদ্ধ
+        মোৰ সৰ্বশ্ৰেষ্ঠ জ্ঞানঅনুসৰি। মই ইয়াৰ দ্বাৰা ঘোষণা কৰোঁ যে মই সলনি কৰা নাই
+        বা এই আবেদন দাখিল কৰোঁতে যিকোনো তথ্য তৈয়াৰ কৰা।</string>
+
+    <!-- Placeholder -->
+    <string name="string_farmer_statement">মই, %1$, বয়স (বয়স), বছৰ, (পিতৃৰ নাম) এজন বাসিন্দাৰ পুত্ৰ/কন্যা
+        (জিলা নাম), (ৰাজ্যিক নাম) জিলাত (সম্পূৰ্ণ আৱাসিক ঠিকনা) ইয়াৰ দ্বাৰা ঘোষণা কৰিব যে তথ্য
+        ইয়াৰ ওপৰত আৰু ইয়াৰ সৈতে সংলগ্ন নথিপত্ৰত প্ৰদান কৰাটো মোৰ জ্ঞান আৰু বিশ্বাসৰ সৰ্বশ্ৰেষ্ঠ সত্য আৰু শুদ্ধ
+        আৰু ইয়াত একো মিছাকৈ কোৱা বা লুকুৱাই ৰখা হোৱা নাই। মই বুজিপাওঁ যে যদি মোৰ দ্বাৰা দিয়া উক্ত তথ্য প্ৰমাণিত হয়
+        মিছা হবলৈ, তেনেহলে মই বৰ্তমানৰ বাবে আইনৰ যিকোনো ব্যৱস্থা অনুসৰি শাস্তিৰ সন্মুখীন হব লাগিব আৰু লগতে লাভালাভৰ সন্মুখীন হব লাগিব
+        মোৰ দ্বাৰা প্ৰাপ্ত কৰা বা মোৰ ওচৰত প্ৰাপ্ত লাভালাভবোৰ সাৰাংশভাৱে বাতিল কৰা হব।
+    </string>
+
+    <string name="string_officer_statement">মই, %1$, বয়স (বয়স), বছৰ, (পিতৃৰ নাম) এজন বাসিন্দাৰ পুত্ৰ/কন্যা
+        (জিলা নাম), (ৰাজ্যিক নাম) জিলাত (সম্পূৰ্ণ আৱাসিক ঠিকনা) ইয়াৰ দ্বাৰা ঘোষণা কৰিব যে তথ্য
+        ইয়াৰ ওপৰত আৰু ইয়াৰ সৈতে সংলগ্ন নথিপত্ৰত প্ৰদান কৰাটো মোৰ জ্ঞান আৰু বিশ্বাসৰ সৰ্বশ্ৰেষ্ঠ সত্য আৰু শুদ্ধ
+        আৰু ইয়াত একো মিছাকৈ কোৱা বা লুকুৱাই ৰখা হোৱা নাই। মই বুজিপাওঁ যে যদি মোৰ দ্বাৰা দিয়া উক্ত তথ্য প্ৰমাণিত হয়
+        মিছা হবলৈ, তেনেহলে মই বৰ্তমানৰ বাবে আইনৰ যিকোনো ব্যৱস্থা অনুসৰি শাস্তিৰ সন্মুখীন হব লাগিব আৰু লগতে লাভালাভৰ সন্মুখীন হব লাগিব
+        মোৰ দ্বাৰা প্ৰাপ্ত কৰা বা মোৰ ওচৰত প্ৰাপ্ত লাভালাভবোৰ সাৰাংশভাৱে বাতিল কৰা হব।
+    </string>
+
+    <string name="string_sub_inst_officer">আবেদনকাৰীৰ ফাৰ্ম ইনফিনিটি স্কোৰ আনলক কৰক আৰু কেৱল \u20B950/-ৰ নামমাত্ৰ মাচুল পৰিশোধ কৰি ক্ৰেডিট প্ৰতিবেদনত প্ৰৱেশাধিকাৰ প্ৰাপ্ত কৰক। অনুগ্ৰহ কৰি আগবাঢ়িবলৈ এতিয়া পৰিশোধ ক্লিক কৰক বা এৰিবলৈ পিছত পৰিশোধ ক্লিক কৰক</string>
+
+    <string name="string_sub_inst_farmer">Know your Farm Infinity score and get access to the Credit Report by paying a nominal fee of \u20B950/-only.
+        Please click pay now to proceed or click pay later to skip.
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_settings">Settings</string>
+    <string name="profile_desc">Rowan Sebastian Atkinson CBE is an English actor,  comedian and screenwriter</string>
+    <string name="profile_title">Mr Bean</string>
+    <string name="posts">posts</string>
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+    <string name="msg_error_unable_select_profile_pic">Unable to set profile image. Please try again!</string>
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+
+    <!-- font families -->
+    <string name="font_family_light">sans-serif-light</string>
+    <string name="font_family_medium">sans-serif-medium</string>
+    <string name="font_family_regular">sans-serif</string>
+    <string name="font_family_condensed">sans-serif-condensed</string>
+    <string name="font_family_black">sans-serif-black</string>
+    <string name="font_family_thin">sans-serif-thin</string>
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+</resources>

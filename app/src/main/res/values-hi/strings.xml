@@ -1,0 +1,374 @@
+<resources>
+    <string name="app_name">Farm Infinity</string>
+
+    <string name="take_photo">Take Photo</string>
+    <string name="start_capture">Start Capture</string>
+    <string name="stop_capture">Stop Capture</string>
+    <string name="warning">GPS is not enabled.</string>
+
+    <string name="resend"><u>पुन: भेजें</u></string>
+    <string name="lbl_rad_btn_farmer"><u>किसान</u></string>
+    <string name="lbl_rad_btn_officer"><u>अफ़सर</u></string>
+    <string name="hnt_et_username"><u>पंजीकृत फोन नं।</u></string>
+    <string name="hnt_et_otp"><u>ओटीपी</u></string>
+    <string name="hnt_username"><u>यूज़र आईडी</u></string>
+    <string name="hnt_password"><u>पासवर्ड</u></string>
+    <string name="lbl_signup">साइन अप करें</string>
+    <!--<string name="Login">लॉग इन करें</string>-->
+    <string name="lbl_fpo">एफपीओ</string>
+    <string name="lbl_agent">एजेंट</string>
+    <string name="lbl_privacy_policy_link">By Signing In, you agree to the terms of use and privacy policy. Please visit the below link for more information.</string>
+    <string name="lbl_pp_link">Privacy Policy</string>
+
+    <string name="error_message_blank_field">खाली नहीं रह सकता</string>
+    <string name="error_message_invalid_phone_no">अवैध फोन नंबर</string>
+    <string name="error_message_invalid_email">अवैध ईमेल</string>
+    <string name="error_message_invalid_input">अमान्य निवेश</string>
+
+    <string name="error_msg_pswd_len">पासवर्ड 8 से 16 वर्णों के बीच होना चाहिए</string>
+    <string name="error_msg_pswd_match">पासवर्ड मेल नहीं खाता</string>
+    <string name="error_msg_session_expired">सत्र समाप्त हुआ। कृपया फिर भाग लें।</string>
+    <string name="error_msg_logged_out">आप लॉग आउट हो गए हैं</string>
+    <string name="error_msg_feature_not_available">सुविधा उपलब्ध नहीं है</string>
+    <string name="error_msg_app_update">किसी सुविधा के सुचारू रूप से काम करने के लिए हमें अनुमतियों की आवश्यकता होती है</string>
+    <string name="error_msg_app_restart">कृपया एप्लिकेशन को पुनरारंभ करें</string>
+    <string name="msg_enter_otp">ओटीपी प्राप्त करने के बाद दर्ज करें</string>
+    <string name="err_msg_login_officer">कृपया उपयोगकर्ता नाम और पासवर्ड दर्ज करें</string>
+    <string name="err_msg_login_farmer">अमान्य मोबाइल नंबर/ओटीपी</string>
+    <string name="msg_level_one_complete_farmer">कृपया साइन-अप/पंजीकरण के दौरान दिए गए फोन नंबर के साथ लॉग इन करके शेष फॉर्म जारी रखें।</string>
+    <string name="error_msg_loc">स्थान नहीं मिल सका। पुनः प्रयास करें।</string>
+    <string name="error_msg_farmer_declaration">किसान घोषणा चेकबॉक्स चेक करें</string>
+    <string name="error_msg_officer_declaration">अधिकारी घोषणा चेकबॉक्स चेक करें</string>
+    <string name="err_msg_gender">लिंग चुनें</string>
+    <string name="err_msg_area_units">इकाइयों का चयन करें</string>
+    <string name="err_msg_state">राज्य चुनें</string>
+    <string name="err_msg_pin">पिन नंबर 6 अंकों का होना चाहिए</string>
+    <string name="err_msg_amount">ऋण राशि का चयन करें</string>
+    <string name="err_msg_loan_purpose">ऋण उद्देश्य चुनें</string>
+    <string name="err_msg_age">आयु 18 से 57 वर्ष के बीच होनी चाहिए</string>
+    <string name="err_msg_irr_fclty">सिंचाई सुविधा चेकबॉक्स से कम से कम एक आइटम चेक करें</string>
+    <string name="err_msg_farm_equip">कृषि उपकरण चेकबॉक्स से कम से कम एक आइटम चेक करें</string>
+    <string name="err_msg_livestock">पशुधन चेकबॉक्स से कम से कम एक आइटम चेक करें</string>
+    <string name="err_msg_rabi_crp">रबी फसल चेकबॉक्स से कम से कम एक आइटम चेक करें</string>
+    <string name="err_msg_kharif_crp">खरीफ फसलों के चेकबॉक्स से कम से कम एक आइटम चेक करें</string>
+    <string name="err_msg_summer_crp">ग्रीष्मकालीन फसलों के चेकबॉक्स से कम से कम एक आइटम चेक करें</string>
+    <string name="err_msg_plantation_crp_area">वृक्षारोपण क्षेत्र कुल कृषि भूमि क्षेत्र से कम होना चाहिए</string>
+    <string name="err_msg_plantation_crp">बागान फसल चेकबॉक्स से कम से कम एक आइटम चेक करें</string>
+    <string name="err_msg_doc_name_match">दस्तावेज़ में नाम आवेदक के नाम से मेल नहीं खाता</string>
+    <string name="err_msg_masked_image">नकाबपोश छवि प्राप्त करने में विफल. पुनः प्रयास करें</string>
+    <string name="err_msg_aadhar_back">कृपया आधार कार्ड के पिछले हिस्से को अपलोड करें</string>
+    <string name="err_msg_passport_name_match">पासपोर्ट सत्यापन में विफल रहा। नाम मेल नहीं खाता</string>
+    <string name="err_msg_passport_number">पासपोर्ट सत्यापन में विफल रहा।</string>
+    <string name="err_msg_voter_id_name_match">मतदाता पहचान पत्र सत्यापन में विफल रहा। नाम मेल नहीं खाता</string>
+    <string name="err_msg_voter_id_number">वोटर आईडी सत्यापन में विफल</string>
+    <string name="err_msg_dl_name_match">ड्राइविंग लाइसेंस सत्यापन में विफल रहा। नाम मेल नहीं खाता</string>
+    <string name="err_msg_dl_number">ड्राइविंग लाइसेंस सत्यापन में विफल</string>
+    <string name="err_msg_pan_name_match">पैन सत्यापन में विफल रहा। नाम मेल नहीं खाता।</string>
+    <string name="err_msg_pan_number">पैन सत्यापन में विफल रहा</string>
+    <string name="err_msg_invalid_aadhaar">अमान्य आधार संख्या</string>
+    <string name="err_msg_invalid_pan">अमान्य आधार संख्या</string>
+    <string name="err_msg_invalid_dl">अमान्य ड्राइविंग लाइसेंस नंबर</string>
+    <string name="err_msg_invalid_passport">अमान्य पासपोर्ट फ़ाइल नंबर</string>
+    <string name="err_msg_invalid_voter_id">अमान्य मतदाता पहचान संख्या</string>
+    <string name="msg_aadhaar_prompt">अपना आधार अपने पास रखें और जारी रखने के लिए ओके दबाएं।</string>
+    <string name="err_msg_doc_varifation">सिस्टम में गड़बड़ी। सत्यापित करने में असमर्थ</string>
+    <string name="err_msg_ifsc_code">आईएफएससी कोड 11 अक्षरों का होना चाहिए</string>
+    <string name="err_msg_acc_no">खाता सं. 6 वर्णों से अधिक होना चाहिए</string>
+    <string name="err_msg_family_member">अधिकतम 15 सदस्यों की अनुमति</string>
+    <string name="err_msg_pan_checked">पैन उपलब्ध चेकबॉक्स चेक किया गया है। कृपया पहचान के प्रमाण के रूप में पैन कार्ड का चयन करें</string>
+    <string name="err_msg_dbt_empty">डीबीटी खाता संख्या खाली नहीं हो सकती</string>
+    <string name="err_msg_select_doc_name">दस्तावेज़ का नाम चुनें</string>
+    <string name="err_msg_select_loan_type">ऋण प्रकार चुनें</string>
+    <string name="err_msg_select_tenure">कार्यकाल चुनें</string>
+    <string name="err_msg_id_proof_select">आईडी प्रूफ दस्तावेज़ का नाम चुनें</string>
+    <string name="err_msg_add_proof_select">पता प्रमाण दस्तावेज़ का नाम चुनें</string>
+    <string name="err_msg_land_proof_select">भूमि दस्तावेज़ का नाम चुनें</string>
+    <string name="err_msg_valid_poi">कृपया एक मान्य आईडी प्रूफ दस्तावेज़ संख्या दर्ज करें</string>
+    <string name="err_msg_valid_poa">कृपया एक मान्य पता प्रमाण दस्तावेज़ संख्या दर्ज करें</string>
+
+    <string name="resend_otp">अतापह प्राप्त करें?</string>
+    <string name="forgot_pswd">पासवर्ड भूल गए?</string>
+
+    <string name="error_network_timeout">Request time out</string>
+    <string name="splash_footer">&#169;2020 farmeasytechnologies</string>
+
+    <string name="login_screen_bottom_text">नए किसान उत्पादक संगठन (एफपीओ) और एजेंट पंजीकरण के लिए नीचे दिए गए संबंधित लिंक पर क्लिक करें</string>
+
+    <string name="gen_cred">Click here to generate farmer login credential\n(Optional)</string>
+
+    <string name="ddl_english">English</string>
+    <string name="ddl_hindi">Hindi-हिंदी</string>
+    <string name="ddl_assamese">Assamese-অসমীয়া</string>
+
+    <string name="ddl_male">Male</string>
+    <string name="ddl_female">Female</string>
+
+    <string name="ddl_unit_Acre">Acre</string>
+    <string name="ddl_unit_Bhigha">Bigha</string>
+
+    <string name="lbl_dashboard_add_btn">ग्राहक जोड़ें</string>
+    <string name="lbl_dashboard_add_text">किसान विवरण जोड़ें</string>
+    <string name="lbl_dashboard_edit_btn">संपादित करें/खोजें</string>
+    <string name="lbl_dashboard_edit_text">खोजें &amp; किसान जानकारी संपादित करें</string>
+    <string name="lbl_dashboard_recent_btn">हाल का</string>
+    <string name="lbl_dashboard_recent_text">हाल ही में जोड़े गए ग्राहक</string>
+    <string name="lbl_dashboard_setting_btn">समायोजन</string>
+    <string name="lbl_dashboard_setting_text">बैकअप, पुनर्स्थापना, भाषा</string>
+    <string name="lbl_dashboard_reports_btn">रिपोर्टों</string>
+    <string name="lbl_dashboard_reports_text">रिपोर्ट जनरेट करें</string>
+
+    <string name="lbl_choose_language">भाषा चुनें</string>
+    <string name="lbl_home">घर</string>
+    <string name="lbl_setting">समायोजन</string>
+    <string name="lbl_reset_password">पासवर्ड रीसेट</string>
+    <string name="lbl_logout">लॉग आउट</string>
+    <string name="lbl_language">भाषा: हिन्दी</string>
+    <string name="lbl_password_management">पासवर्ड प्रबंधन</string>
+    <string name="lbl_change_password">पासवर्ड बदलें</string>
+    <string name="lbl_memory_management">Memory Management</string>
+    <string name="lbl_clear_cache">Clear Cache</string>
+    <string name="lbl_share_app">किसी मित्र को आमंत्रित करें</string>
+    <string name="lbl_about">About</string>
+    <string name="lbl_about_text">फार्म इन्फिनिटी (किसान आवेदन प्रबंधन ऐप)</string>
+    <string name="lbl_version">Version 1.7.1</string>
+    <string name="lbl_privacy_policy">गोपनीयता नीति</string>
+    <string name="lbl_term_con">Terms and Condt.</string>
+    <string name="lbl_hint_old_pswd">पुराना पासवर्ड</string>
+    <string name="lbl__hint_new_pswd">नया पासवर्ड</string>
+    <string name="lbl_hint_confirm_pswd">पासवर्ड की पुष्टि कीजिये</string>
+    <string name="lbl_recently_added">हाल ही में जोड़ा</string>
+    <string name="lbl_edit_search">संपादित करें/खोजें</string>
+    <string name="lbl_edit_prefrences">प्राथमिकताओं को संपादित करो</string>
+
+    <string name="lbl_share_msg">किसानों और कृषि व्यवसायियों के लिए आसान और सस्ती वित्तीय सेवाएं अब "फार्म इन्फिनिटी" ऐप पर लागू होती हैं। ऐप का लिंक नीचे दिया गया है।</string>
+    <string name="lbl_thank_msg">धन्यवाद। आपका दिन शुभ हो।</string>
+
+    <string name="lbl_application_id">आवेदन पहचान पत्र</string>
+    <string name="lbl_first_name">पहला नाम</string>
+    <string name="lbl_middle_name">मध्य नाम</string>
+    <string name="lbl_last_name">अंतिम नाम</string>
+    <string name="lbl_date_of_birth">जन्म की तारीख</string>
+    <string name="lbl_age">उम्र</string>
+    <string name="lbl_gender">लिंग</string>
+    <string name="lbl_father_name">पिता का नाम</string>
+    <string name="lbl_married">यदि विवाहित है तो जीवनसाथी का नाम लिखें</string>
+    <string name="lbl_phone_no">फोन नंबर। (बैंक रिकॉर्ड के अनुसार)</string>
+    <string name="lbl_alt_phone_no">ऑल्ट फोन नं.</string>
+    <string name="lbl_email">ईमेल</string>
+    <string name="lbl_address_line_1">पता पंक्ति 1</string>
+    <string name="lbl_address_line_2">पता पंक्ति 2</string>
+    <string name="lbl_village">गाँव</string>
+    <string name="lbl_city_town">शहर/कस्बा</string>
+    <string name="lbl_district">जिला</string>
+    <string name="lbl_pin">पिन</string>
+    <string name="lbl_state">राज्य</string>
+    <string name="lbl_loan_amt">ऋण राशि की आवश्यकता</string>
+    <string name="lbl_loan_purpose">ऋण का उद्देश्य</string>
+    <string name="lbl_loan_remarks">ऋण टिप्पणी</string>
+    <string name="lbl_gps">जीपीएस स्थान</string>
+    <string name="lbl_hint_long_lat">देशांतर अक्षांश</string>
+    <string name="cb_agree">मैं सहमत हूँ कि मैंने नीचे उल्लिखित नियमों और शर्तों को पढ़ा है, और घोषणा की है कि मेरे द्वारा दी गई जानकारी मेरे ज्ञान के लिए सही है।</string>
+
+    <string name="lbl_is_fpo">क्या किसान एफपीओ/एफपीसी का सदस्य है?</string>
+    <string name="lbl_fpo_name">एफपीओ/एफपीसी नाम</string>
+    <string name="lbl_fpo_not_in_list">यदि FPO/FPC सूची में नहीं है तो चेकबॉक्स चेक करें</string>
+    <string name="lbl_fpo_code">एफपीओ/एफपीसी कोड</string>
+    <string name="lbl_family_member_count">परिवार के सदस्यों की संख्या</string>
+    <string name="lbl_bank_details">बैंक विवरण (डीबीटी के लिए)</string>
+    <string name="lbl_acc_no">खाता नंबर।</string>
+    <string name="lbl_bank_name">बैंक का नाम</string>
+    <string name="lbl_ifsc">आईएफएससी कोड</string>
+    <string name="lbl_passbook_photo">पासबुक फोटो</string>
+    <string name="lbl_kcc">केसीसी योजना</string>
+    <string name="lbl_hold_kcc">क्या आपके पास केसीसी है?</string>
+    <string name="lbl_loan_type">ऋण प्रकार</string>
+    <string name="lbl_k_acc_no">खाता नंबर।</string>
+    <string name="lbl_k_namk_name">बैंक का नाम</string>
+    <string name="lbl_k_ifsc">आईएफएससी कोड</string>
+    <string name="lbl_k_tenure">कार्यकाल (महीनों में)</string>
+    <string name="lbl_annual_obligation">वार्षिक दायित्व</string>
+    <string name="lbl_insurance">बीमा योजना</string>
+    <string name="lbl_hold_insurence">क्या आपके पास फसल/पशुधन बीमा है?</string>
+    <string name="lbl_other_loan">अन्य ऋण</string>
+    <string name="lbl_avail_other_loan">क्या आपने कोई अन्य ऋण लिया?</string>
+    <string name="lbl_other_loan_type">ऋण प्रकार</string>
+    <string name="lbl_other_loan_Account_no">खाता नंबर।</string>
+    <string name="lbl_other_loan_bank_name">बैंक का नाम</string>
+    <string name="lbl_other_loan_ifsc">आईएफएससी कोड</string>
+    <string name="lbl_other_loan_amt">उधार की राशि</string>
+    <string name="lbl_other_loan_tenure">कार्यकाल (महीनों में)</string>
+    <string name="lbl_other_loan_obligation">वार्षिक दायित्व</string>
+    <string name="lbl_doc_need">आवश्यक दस्तावेज</string>
+    <string name="lbl_passport_size_photo">पासपोर्ट साइज फोटो</string>
+    <string name="lbl_pan_card">पैन कार्ड (उपलब्ध)</string>
+    <string name="lbl_poi">पहचान की सबूत</string>
+    <string name="lbl_poa">पते का सबूत</string>
+    <string name="lbl_land_doc">भूमि दस्तावेज (कोई भी)</string>
+    <string name="lbl_contact">क्या आप चाहते हैं कि हम आपसे संपर्क करें?</string>
+
+    <string name="lbl_land_holdings">भूमि जोत</string>
+    <string name="lbl_land_area_unit">में (ड्रॉपडाउन सूची से चुनें।</string>
+    <string name="lbl_land_area">वृक्षारोपण क्षेत्र सहित कुल कृषि भूमि</string>
+    <string name="lbl_irrigation_facility">सिंचाई सुविधा</string>
+    <string name="lbl_drip_irrigation">टपकन सिंचाई</string>
+    <string name="lbl_river_cannal">नदी/नहर आस-पास</string>
+    <string name="lbl_hydroponics">हीड्रोपोनिक्स</string>
+    <string name="lbl_sprinklers">स्प्रिंकलर</string>
+    <string name="lbl_rainfed">रेनफेड</string>
+    <string name="lbl_water_pumps">वॉटर पंप</string>
+    <string name="lbl_rain_pond">वर्षा जल संचयन/तालाब</string>
+    <string name="lbl_solar_water_pumps">सौर जल पंप</string>
+    <string name="lbl_other">अन्य</string>
+    <string name="lbl_farm_equipment">कृषि उपकरण</string>
+    <string name="lbl_harvester">फ़सल काटने की मशीन</string>
+    <string name="lbl_seeder">बोने की मशीन</string>
+    <string name="lbl_plough">हल-मवेशी संचालित</string>
+    <string name="lbl_tractor">हल-मवेशी संचालित</string>
+    <string name="lbl_power_tiller">पावर टिलर</string>
+    <string name="lbl_weeder">वीडर</string>
+    <string name="lbl_farm_storage_facility">फार्म भंडारण सुविधाएं उपलब्ध हैं?</string>
+    <string name="lbl_post_harvest_facility">पोस्ट हार्वेस्ट सुविधाएं उपलब्ध हैं?</string>
+    <string name="lbl_livestock">पशु</string>
+    <string name="lbl_bull">सांड</string>
+    <string name="lbl_calf">गाय का बच्चा</string>
+    <string name="lbl_camel">ऊंट</string>
+    <string name="lbl_cow">गाय</string>
+    <string name="lbl_duck">बत्तख</string>
+    <string name="lbl_goat">बकरा</string>
+    <string name="lbl_hen">मुर्गी</string>
+    <string name="lbl_horse_mare_mule">घोड़ा/घोड़ी/खच्चर</string>
+    <string name="lbl_pig">सूअर</string>
+    <string name="lbl_rabbit">खरगोश</string>
+    <string name="lbl_sheep">भेड़</string>
+    <string name="lbl_rabi_crops">रबी की फसलें</string>
+    <string name="lbl_cash_crop">नकदी फ़सल</string>
+    <string name="lbl_cereal_grain">अनाज और अनाज</string>
+    <string name="lbl_oil_seed">तिलहन</string>
+    <string name="lbl_pulses">दलहन</string>
+    <string name="lbl_spices">मसाले</string>
+    <string name="lbl_vegetables">सब्जियां</string>
+    <string name="lbl_kharif_crops">खरीफ की फसलें</string>
+    <string name="lbl_summer_crops">ग्रीष्मकालीन फसलें</string>
+    <string name="lbl_plantation_crops">वृक्षारोपण फसलें</string>
+    <string name="lbl_plantation_crop">वृक्षारोपण फसल</string>
+    <string name="lbl_plantation_crops_area">वृक्षारोपण क्षेत्र (एकड़ में)</string>
+    <string name="lbl_plantation_fruit">वृक्षारोपण फल</string>
+    <string name="lbl_medicinal_plant">औषधीय पौधा</string>
+    <string name="lbl_exotic_plant">विदेशी फसल</string>
+    <string name="lbl_chemical_fertilizer">प्रयुक्त रासायनिक उर्वरक (किलो/एकड़)</string>
+    <string name="lbl_pesticide">प्रयुक्त कीटनाशक (किलो/एकड़)</string>
+    <string name="lbl_organic_fertilizer">प्रयुक्त जैविक उर्वरक (किलो/एकड़)</string>
+
+    <string name="lbl_yes">हाँ</string>
+    <string name="lbl_no">ना</string>
+    <string name="lbl_hint_capital">Enter in CAPITAL</string>
+
+    <string name="lbl_resend_otp">Resend OTP</string>
+
+    <string name="et_hint_first_name">Enter your first name</string>
+    <string name="et_hint_middle_name">Enter your middle name</string>
+    <string name="et_hint_last_name">Enter your last name</string>
+    <string name="et_hint_dob">Enter dob from date picker</string>
+    <string name="et_hint_age">Age</string>
+    <string name="et_hint_farner_name">Enter your father name</string>
+    <string name="et_hint_phone_no">Enter your phone number</string>
+    <string name="et_hint_alt_phone_no">Enter your alternate phone number</string>
+    <string name="et_hint_email">Enter your email id</string>
+    <string name="et_hint_chem_fert">eg 10.0</string>
+    <string name="et_hint_pesticide">eg 10.0</string>
+    <string name="et_hint_organic_fert">eg 10.0</string>
+    <string name="et_hint_dbt_bank_name">Enter bank name</string>
+    <string name="et_hint_dbt_acc_no">Enter acc no.</string>\
+    <string name="et_hint_member_count">Enter no of family member</string>
+    <string name="et_hint_dbt_ifsc">Enter ifsc code</string>
+
+    <string name="lbl_hint_otp">Enter OTP</string>
+    <string name="lbl_hint_reg_Ph_no">Enter your registered Phone No</string>
+    <string name="lbl_hint_new_pswd">Enter new password</string>
+    <string name="lbl_hint_confirm_new_pswd">Confirm new password</string>
+    <string name="lbl_upload_photo">UPLOAD PHOTO</string>
+    <string name="lbl_submit">Submit</string>
+    <string name="lbl_save">Save</string>
+    <string name="lbl_open_cam">Open Camera</string>
+    <string name="lbl_longitude">Longitude: </string>
+    <string name="lbl_latitude">Latitude: </string>
+    <string name="lbl_otp_msg">OTP is valid for 10 minutes</string>
+    <string name="lbl_verify">Verify</string>
+    <string name="lbl_farmer_search">Get Farmer Details</string>
+    <string name="lbl_hint_farmer_search_box">Enter Farmer Id/Name</string>
+    <string name="lbl_text_farmer">Farmer</string>
+    <string name="lbl_text_officer">Officer</string>
+    <string name="et_hint_capture_date">Date</string>
+    <string name="et_hint_gps">Coordinates</string>
+
+    <string name="content_description_cam">Open Camera</string>
+    <string name="content_description_cam_pane">Camera Pane</string>
+    <string name="content_description_ddl">Dropdown List</string>
+    <string name="content_description_gps">GPS</string>
+    <string name="content_description_calendar">Calendar</string>
+    <string name="content_description_logo">Logo</string>
+
+    <string name="lbl_send_otp">Send OTP</string>
+    <string name="lbl_text_and">&amp;</string>
+
+    <string name="privacy_policy_url">https://farminfinity.com/privacy_policy1.html</string>
+    <string name="terms_url">https://farminfinity.com/terms.html</string>
+
+    <string name="farmer_declaration_emp">ओटीपी के माध्यम से सत्यापन करके, आवेदक घोषणा करता है कि इस प्लेटफॉर्म के आवेदन में दर्ज की गई जानकारी
+        उसके ज्ञान के लिए सही है। आवेदक द्वारा यह भी स्वीकार किया जाता है कि आवेदन जमा करने पर, Farm Infinity उसे किसी भी प्रकार के ऋण या
+        अन्य वित्तीय उत्पादों के संवितरण/स्वीकृति की गारंटी नहीं देता है। गलत/धोखाधड़ी प्रदान की गई जानकारी के कारण उत्पन्न होने वाले किसी भी विवाद के लिए फार्म इन्फिनिटी जिम्मेदार नहीं है</string>
+
+    <string name="farmer_declaration">मैं सहमत हूं कि इस मंच में भरी गई जानकारी मेरी जानकारी के अनुसार सही है।
+        मैं एतद्द्वारा घोषणा करता/करती हूँ कि मैंने इस आवेदन को प्रस्तुत करते समय किसी भी जानकारी में कोई परिवर्तन या हेरफेर नहीं किया है।</string>
+
+    <string name="officer_declaration">मैं सहमत हूं कि इस मंच में भरी गई जानकारी आवेदक द्वारा दी गई है और मेरी जानकारी के अनुसार सही है।
+        मैं एतद्द्वारा घोषणा करता/करती हूँ कि मैंने इस आवेदन को प्रस्तुत करते समय किसी भी जानकारी में कोई परिवर्तन या हेरफेर नहीं किया है।</string>
+
+    <!-- Placeholder -->
+    <string name="string_farmer_statement">मैं, %1$s, वृद्ध (आयु), वर्ष, पुत्र/पुत्री (पिता का नाम) का निवासी (पूरा आवासीय पता) जिले के (जिले का नाम),
+        (राज्य का नाम), एतद्द्वारा घोषित करता हूं कि यहां ऊपर दी गई जानकारी और इसके साथ संलग्न दस्तावेजों में मेरी जानकारी और विश्वास के अनुसार सत्य और सही है
+        और इसमें कुछ भी झूठा या छुपाया नहीं गया है। मैं समझता/समझती हूँ कि यदि मेरे द्वारा दी गई उक्त सूचना असत्य सिद्ध होती है, तो मुझे तत्समय प्रवृत्त विधि के किसी प्रावधान
+        के साथ-साथ मेरे द्वारा प्राप्त लाभ या उपार्जित लाभ के अनुसार दंड का सामना करना पड़ेगा। मुझे सरसरी तौर पर रद्द कर दिया जाएगा।
+    </string>
+
+    <string name="string_officer_statement">I, %1$s, वृद्ध (आयु), वर्ष, पुत्र/पुत्री (पिता का नाम) का निवासी (पूरा आवासीय पता)
+        जिले के (जिले का नाम), (राज्य का नाम), फार्म इन्फिनिटी के कर्मचारी, कर्मचारी आईडी (आईडी) एतद्द्वारा घोषित करता है कि
+        ऊपर और इसके साथ संलग्न दस्तावेजों में एकत्र की गई जानकारी मेरे सर्वोत्तम ज्ञान और विश्वास के अनुसार सत्य और सही है और इसमें कुछ
+        भी झूठा या छुपाया नहीं गया है। मैं समझता/समझती हूँ कि यदि मेरे द्वारा दी गई उक्त सूचना असत्य सिद्ध होती है, तो मुझे तत्समय प्रवृत्त विधि
+        के किसी प्रावधान के साथ-साथ मेरे द्वारा प्राप्त लाभ या उपार्जित लाभ के अनुसार दंड का सामना करना पड़ेगा। मुझे सरसरी तौर पर रद्द कर दिया जाएगा।
+    </string>
+    <string name="string_sub_inst_officer">आवेदक के फार्म इन्फिनिटी स्कोर को अनलॉक करें और \u20B950/-केवल के नाममात्र शुल्क का भुगतान करके क्रेडिट रिपोर्ट तक पहुंच प्राप्त करें। आगे बढ़ने के लिए कृपया भुगतान करें पर क्लिक करें या छोड़ने के लिए बाद में भुगतान करें पर क्लिक करें
+    </string>
+    <string name="string_sub_inst_farmer">Know your Farm Infinity score and get access to the Credit Report by paying a nominal fee of \u20B950/-only.
+        Please click pay now to proceed or click pay later to skip.
+    </string>
+
+    <string name="lbl_hint_first_name">First</string>
+    <string name="lbl_hint_middle_name">Middle</string>
+    <string name="lbl_hint_last_name">Last</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_settings">Settings</string>
+    <string name="profile_desc">Rowan Sebastian Atkinson CBE is an English actor,  comedian and screenwriter</string>
+    <string name="profile_title">Mr Bean</string>
+    <string name="posts">posts</string>
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+    <string name="msg_error_unable_select_profile_pic">Unable to set profile image. Please try again!</string>
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+
+    <!-- font families -->
+    <string name="font_family_light">sans-serif-light</string>
+    <string name="font_family_medium">sans-serif-medium</string>
+    <string name="font_family_regular">sans-serif</string>
+    <string name="font_family_condensed">sans-serif-condensed</string>
+    <string name="font_family_black">sans-serif-black</string>
+    <string name="font_family_thin">sans-serif-thin</string>
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+</resources>

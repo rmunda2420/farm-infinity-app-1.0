@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_fragment_farm_authentication"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.FarmAuthentication">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.baoyachi.stepview.HorizontalStepView
+                android:id="@+id/step_view_fragment_farm_authentication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Authenticate your farm by uploading a selfie with your farm along with gps coordinates on the photo."
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_btn_upload_farm_photo_fragment_farm_authentication"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_btn_upload_farm_photo_fragment_farm_authentication"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="Upload Photo"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/iv_viewFarmPhoto_fragment_farm_authentication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_toEndOf="@+id/cv_btn_upload_farm_photo_fragment_farm_authentication"
+                    android:src="@drawable/ic_view_doc_grey" />
+
+            </RelativeLayout>
+
+            <com.github.aakira.compoundicontextview.CompoundIconTextView
+                android:id="@+id/tv_gps_co_fragment_farm_authentication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="GPS Coordinates"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                app:cit_iconColor="@color/color_mandatory_field"
+                app:cit_iconHeight="8dp"
+                app:cit_iconWidth="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_gps_co_fragment_farm_authentication"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_gps_co_fragment_farm_authentication"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/roundededge_edittext"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:hint="@string/et_hint_gps"
+                    android:enabled="false"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.github.aakira.compoundicontextview.CompoundIconTextView
+                android:id="@+id/tv_gps_cap_dt_fragment_farm_authentication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Capture Date"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                app:cit_iconColor="@color/color_mandatory_field"
+                app:cit_iconHeight="8dp"
+                app:cit_iconWidth="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_gps_cap_dt_fragment_farm_authentication"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_gps_cap_dt_fragment_farm_authentication"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/roundededge_edittext"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:enabled="false"
+                    android:hint="@string/et_hint_capture_date"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <com.github.aakira.compoundicontextview.CompoundIconTextView
+                    android:id="@+id/tv_lblLandDoc_fragment_farm_authentication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lbl_land_doc"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+
+                    app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                    app:cit_iconColor="@color/color_mandatory_field"
+                    app:cit_iconHeight="8dp"
+                    app:cit_iconWidth="8dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_spinner_landDoc_fragment_farm_authentication"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_lblLandDoc_fragment_farm_authentication"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/spinner_border"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinner_landDoc_fragment_farm_authentication"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:spinnerMode="dropdown" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_drop" />
+
+                </RelativeLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_landDocNo_fragment_farm_authentication"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_spinner_landDoc_fragment_farm_authentication"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_landDocNo_fragment_farm_authentication"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-/"
+                        android:hint="@string/lbl_hint_capital"
+                        android:inputType="textCapWords"
+                        android:padding="8dp"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/til_landDocNo_fragment_farm_authentication"
+                    android:orientation="horizontal">
+
+                    <!--<EditText
+                        android:id="@+id/et_filePathLandDoc_fragment_level_two"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:ellipsize="end"
+                        android:enabled="false"
+                        android:hint="Path"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textSize="16sp" />-->
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_btn_upload_land_doc_fragment_farm_authentication"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="20dp"
+                        app:cardBackgroundColor="@color/colorPrimary"
+                        app:cardCornerRadius="25dp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tv_cv_btn_upload_land_doc_fragment_farm_authentication"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:text="Upload Image"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!--<ImageView
+                        android:id="@+id/iv_attachLandDoc_fragment_level_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/ic_attach_file_grey" />-->
+
+                    <ImageView
+                        android:id="@+id/iv_viewLandDoc_fragment_farm_authentication"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/ic_view_doc_grey" />
+
+                    <!--<ImageView
+                        android:id="@+id/iv_clPathLandDoc_fragment_level_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/ic_refresh_grey_24dp" />-->
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_btn_save_fragment_farm_authentication"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="24dp"
+                app:cardBackgroundColor="#FD7D00"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Save/Skip"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

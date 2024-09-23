@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cl_activity_geo_tag_capture"
+    tools:context=".Activities.GeoTagCapture">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_cam_activity_geo_tag_capture"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/lbl_open_cam"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:contentDescription="@string/content_description_cam_pane"
+            android:id="@+id/iv_capture_activity_geo_tag_capture"
+            android:background="@drawable/image_view_boarder"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_latitude"/>
+
+            <TextView
+                android:id="@+id/tv_longitude_activity_geo_tag_capture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_latitude"/>
+
+            <TextView
+                android:id="@+id/tv_latitude_activity_geo_tag_capture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_save_activity_geo_tag_capture"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/lbl_save"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_fragment_edit_level_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.EditLevelOneFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.baoyachi.stepview.HorizontalStepView
+                android:id="@+id/step_view_fragment_edit_level_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
+
+            <com.github.aakira.compoundicontextview.CompoundIconTextView
+                android:id="@+id/tv_lblFirstName_fragment_edit_level_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lbl_first_name"
+                android:textColor="#4D4B4A"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                app:cit_iconColor="@color/color_mandatory_field"
+                app:cit_iconHeight="8dp"
+                app:cit_iconWidth="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_firstName_fragment_edit_level_one"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_firstName_fragment_edit_level_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/roundededge_edittext"
+                    android:inputType="textCapWords"
+                    android:padding="8dp"
+                    android:hint="@string/et_hint_first_name"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lbl_middle_name"
+                android:textColor="#4D4B4A"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_middleName_fragment_edit_level_one"
+                android:layout_width="350dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/roundededge_edittext"
+                android:inputType="textCapWords"
+                android:padding="8dp"
+                android:hint="@string/et_hint_middle_name"
+                android:autofillHints="name"
+                android:textSize="16sp" />
+
+            <com.github.aakira.compoundicontextview.CompoundIconTextView
+                android:id="@+id/tv_lbllastName_fragment_edit_level_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lbl_last_name"
+                android:textColor="#4D4B4A"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                app:cit_iconColor="@color/color_mandatory_field"
+                app:cit_iconHeight="8dp"
+                app:cit_iconWidth="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_lastName_fragment_edit_level_one"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_lastName_fragment_edit_level_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/roundededge_edittext"
+                    android:inputType="textCapWords"
+                    android:padding="8dp"
+                    android:autofillHints="name"
+                    android:hint="@string/et_hint_last_name"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.github.aakira.compoundicontextview.CompoundIconTextView
+                android:id="@+id/tv_lblDob_fragment_edit_level_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lbl_date_of_birth"
+                android:textColor="#4D4B4A"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                app:cit_iconColor="@color/color_mandatory_field"
+                app:cit_iconHeight="8dp"
+                app:cit_iconWidth="8dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_dob_fragment_edit_level_one"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_dob_fragment_edit_level_one"
+                        android:layout_width="250dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:enabled="false"
+                        android:inputType="none"
+                        android:padding="8dp"
+                        android:hint="@string/et_hint_dob"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/iv_dp_fragment_edit_level_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@string/content_description_calendar"
+                    android:layout_toEndOf="@+id/til_dob_fragment_edit_level_one"
+                    android:src="@drawable/ic_date_range_grey" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.github.aakira.compoundicontextview.CompoundIconTextView
+                        android:id="@+id/tv_lblAge_fragment_edit_level_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/lbl_age"
+                        android:textColor="#4D4B4A"
+                        android:textSize="12sp"
+
+                        android:textStyle="bold"
+                        app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                        app:cit_iconColor="@color/color_mandatory_field"
+                        app:cit_iconHeight="8dp"
+                        app:cit_iconWidth="8dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_age_fragment_edit_level_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tiet_age_fragment_edit_level_one"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/roundededge_edittext"
+                            android:digits="1234567890"
+                            android:enabled="false"
+                            android:inputType="none"
+                            android:padding="8dp"
+                            android:hint="@string/et_hint_age"
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <com.github.aakira.compoundicontextview.CompoundIconTextView
+                        android:id="@+id/tv_lblGender_fragment_edit_level_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/lbl_gender"
+                        android:textColor="#4D4B4A"
+                        android:textSize="12sp"
+
+                        android:textStyle="bold"
+                        app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                        app:cit_iconColor="@color/color_mandatory_field"
+                        app:cit_iconHeight="8dp"
+                        app:cit_iconWidth="8dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight=".28"
+                        android:background="@drawable/spinner_border"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner_gender_fragment_edit_level_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:spinnerMode="dropdown" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/content_description_ddl"
+                            android:src="@drawable/ic_drop" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.compoundicontextview.CompoundIconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lbl_father_name"
+                android:textColor="#4D4B4A"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                app:cit_iconColor="@color/color_mandatory_field"
+                app:cit_iconHeight="8dp"
+                app:cit_iconWidth="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_fatherName_fragment_edit_level_one"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_fatherName_fragment_edit_level_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/roundededge_edittext"
+                    android:inputType="textCapWords"
+                    android:padding="8dp"
+                    android:hint="@string/et_hint_farner_name"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_spouse_fragment_edit_level_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_married"
+                    android:textColor="#4D4B4A"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_maritalStatus_fragment_edit_level_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/tv_spouse_fragment_edit_level_one"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qMarriedYes_fragment_edit_level_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="@string/lbl_yes"
+                        android:textColor="#4D4B4A"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qMarriedNo_fragment_edit_level_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:checked="true"
+                        android:text="@string/lbl_no"
+                        android:textColor="#4D4B4A"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_spouseName_fragment_edit_level_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_spouse_fragment_edit_level_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_spouse_fragment_edit_level_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:inputType="textCapWords"
+                        android:padding="8dp"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.compoundicontextview.CompoundIconTextView
+                android:id="@+id/tv_lblPhone_fragment_edit_level_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lbl_phone_no"
+                android:textColor="#4D4B4A"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                app:cit_iconColor="@color/color_mandatory_field"
+                app:cit_iconHeight="8dp"
+                app:cit_iconWidth="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_phone_fragment_edit_level_one"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_phone_fragment_edit_level_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/roundededge_edittext"
+                    android:digits="1234567890"
+                    android:inputType="phone"
+                    android:padding="8dp"
+                    android:hint="@string/et_hint_phone_no"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.github.aakira.compoundicontextview.CompoundIconTextView
+                android:id="@+id/tv_lblAltPhone_fragment_edit_level_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lbl_alt_phone_no"
+                android:textColor="#4D4B4A"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_AltPhone_fragment_edit_level_one"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_AltPhone_fragment_edit_level_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/roundededge_edittext"
+                    android:digits="1234567890"
+                    android:inputType="phone"
+                    android:padding="8dp"
+                    android:hint="@string/et_hint_alt_phone_no"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_lblEmail_fragment_edit_level_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lbl_email"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_email_fragment_edit_level_one"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_email_fragment_edit_level_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/roundededge_edittext"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp"
+                    android:hint="@string/et_hint_email"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.github.aakira.compoundicontextview.CompoundIconTextView
+                android:id="@+id/tv_lblAddressLineOne_fragment_edit_level_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lbl_address_line_1"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                app:cit_iconColor="@color/color_mandatory_field"
+                app:cit_iconHeight="8dp"
+                app:cit_iconWidth="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_AddressLineOne_fragment_edit_level_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_AddressLineOne_fragment_edit_level_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/roundededge_edittext"
+                    android:inputType="textCapWords"
+                    android:padding="8dp"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.github.aakira.compoundicontextview.CompoundIconTextView
+                android:id="@+id/tv_lblAddressLineTwo_fragment_edit_level_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lbl_address_line_2"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_AddressLineTwo_fragment_edit_level_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_AddressLineTwo_fragment_edit_level_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/roundededge_edittext"
+                    android:inputType="textCapWords"
+                    android:padding="8dp"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_lblVillage_fragment_edit_level_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lbl_village"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_village_fragment_edit_level_one"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/roundededge_edittext"
+                android:inputType="textCapWords"
+                android:padding="8dp"
+                android:autofillHints="name"
+                android:textSize="16sp" />
+
+            <com.github.aakira.compoundicontextview.CompoundIconTextView
+                android:id="@+id/tv_lblCity_fragment_edit_level_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lbl_city_town"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                app:cit_iconColor="@color/color_mandatory_field"
+                app:cit_iconHeight="8dp"
+                app:cit_iconWidth="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_city_fragment_edit_level_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_city_fragment_edit_level_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/roundededge_edittext"
+                    android:inputType="textCapWords"
+                    android:padding="8dp"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.github.aakira.compoundicontextview.CompoundIconTextView
+                android:id="@+id/tv_lblDistrict_fragment_edit_level_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lbl_district"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                app:cit_iconColor="@color/color_mandatory_field"
+                app:cit_iconHeight="8dp"
+                app:cit_iconWidth="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_district_fragment_edit_level_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_district_fragment_edit_level_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/roundededge_edittext"
+                    android:inputType="textCapWords"
+                    android:padding="8dp"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.github.aakira.compoundicontextview.CompoundIconTextView
+                android:id="@+id/tv_lblPin_fragment_edit_level_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lbl_pin"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                app:cit_iconColor="@color/color_mandatory_field"
+                app:cit_iconHeight="8dp"
+                app:cit_iconWidth="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_pin_fragment_edit_level_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_pin_fragment_edit_level_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/roundededge_edittext"
+                    android:digits="1234567890"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.github.aakira.compoundicontextview.CompoundIconTextView
+                android:id="@+id/tv_lblState_fragment_edit_level_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lbl_state"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                app:cit_iconColor="@color/color_mandatory_field"
+                app:cit_iconHeight="8dp"
+                app:cit_iconWidth="8dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight=".28"
+                android:background="@drawable/spinner_border"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_state_fragment_edit_level_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/content_description_ddl"
+                    android:src="@drawable/ic_drop" />
+
+            </RelativeLayout>
+
+            <com.github.aakira.compoundicontextview.CompoundIconTextView
+                android:id="@+id/tv_lblLoanAmtSought_fragment_edit_level_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lbl_loan_amt"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                app:cit_iconColor="@color/color_mandatory_field"
+                app:cit_iconHeight="8dp"
+                app:cit_iconWidth="8dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight=".28"
+                android:background="@drawable/spinner_border"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnerLoanAmt_fragment_edit_level_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/content_description_ddl"
+                    android:src="@drawable/ic_drop" />
+
+            </RelativeLayout>
+
+            <com.github.aakira.compoundicontextview.CompoundIconTextView
+                android:id="@+id/tv_lblLoanPurpose_fragment_edit_level_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lbl_loan_purpose"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                app:cit_iconColor="@color/color_mandatory_field"
+                app:cit_iconHeight="8dp"
+                app:cit_iconWidth="8dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight=".28"
+                android:background="@drawable/spinner_border"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnerLoanPurpose_fragment_edit_level_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/content_description_ddl"
+                    android:src="@drawable/ic_drop" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_lblLoanRemarks_fragment_edit_level_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lbl_loan_remarks"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_loan_remarks_fragment_edit_level_one"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/roundededge_edittext"
+                android:inputType="textCapSentences"
+                android:padding="8dp"
+                android:autofillHints="name"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_lblLocation_fragment_edit_level_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lbl_gps"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/et_gpsLocation_fragment_edit_level_one"
+                    android:layout_width="250dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/roundededge_edittext"
+                    android:hint="@string/lbl_hint_long_lat"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:autofillHints="name"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_gps_fragment_edit_level_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@string/content_description_gps"
+                    android:layout_toEndOf="@+id/et_gpsLocation_fragment_edit_level_one"
+                    android:src="@drawable/ic_gps" />
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_btn_save_fragment_edit_level_one"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="#FD7D00"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_btn_submit_fragment_edit_level_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/lbl_save"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

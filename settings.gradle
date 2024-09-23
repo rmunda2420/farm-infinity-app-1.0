@@ -1,0 +1,4 @@
+include ':okyc_WV_V0.3.6'
+include ':app'
+rootProject.name='FarmInfinity'
+

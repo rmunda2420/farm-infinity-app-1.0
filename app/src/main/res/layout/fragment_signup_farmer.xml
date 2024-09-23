@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_fragment_signup_farmer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SignupFarmerFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- Circular Image View  -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile_pic_fragment_signup_farmer"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_avatar_foreground"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="4dp" />
+
+            <Button
+                android:id="@+id/btn_upload_pic_fragment_signup_farmer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="@string/lbl_upload_photo"
+                android:textColor="#4D4B4A" />
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_f_name_fragment_signup_farmer"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:hint="@string/lbl_hint_first_name"
+                    android:textColorHint="#4D4B4A">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_f_name_fragment_signup_farmer"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:inputType="textCapWords"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="8dp"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_m_name_fragment_signup_farmer"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:hint="@string/lbl_hint_middle_name"
+                    android:textColorHint="#4D4B4A">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_m_name_fragment_signup_farmer"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:inputType="textCapWords"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="8dp"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_l_name_fragment_signup_farmer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:hint="@string/lbl_hint_last_name"
+                android:textColorHint="#4D4B4A">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_l_name_fragment_signup_farmer"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/roundededge_edittext"
+                    android:inputType="textCapWords"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="345dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight=".28"
+                android:background="@drawable/spinner_border"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_gender_fragment_signup_farmer"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/content_description_ddl"
+                    android:src="@drawable/ic_drop" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_phone_fragment_signup_farmer"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColorHint="#4D4B4A"
+                android:hint="@string/hnt_et_username">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_phone_fragment_signup_farmer"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/roundededge_edittext"
+                    android:inputType="textCapWords"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <CheckBox
+                    android:id="@+id/cb_tc_fragment_signup_farmer"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="start"
+                    android:textColor="#4D4B4A" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cb_agree"
+                    android:textColor="#4D4B4A"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_lbl_pp_fragment_signup_farmer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_privacy_policy"
+                    android:textSize="16sp" />
+
+                <!--<TextView
+                    android:id="@+id/tv_lbl_and"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_toEndOf="@+id/tv_lbl_pp_fragment_signup_farmer"
+                    android:text="and"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_lbl_tc_fragment_signup_farmer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_term_con"
+                    android:layout_toEndOf="@+id/tv_lbl_and"
+                    android:textSize="16sp" />-->
+
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_btn_submit_fragment_signup_farmer"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="#FD7D00"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_btn_submit_fragment_edit_level_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/lbl_submit"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cl_fragment_score"
+    tools:context=".Fragments.ScoreFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBar_fragment_score"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:max="3"
+        android:progress="100" />
+
+    <WebView
+        android:id="@+id/webview_fragment_score"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_fragment_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_baseline_local_printshop_24"
+        android:visibility="gone"
+        android:contentDescription="TODO" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

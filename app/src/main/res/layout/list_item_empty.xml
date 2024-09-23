@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.aakira.compoundicontextview.CompoundIconTextView
+        android:id="@+id/empty_item_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="221dp"
+        android:text="Empty"
+
+        android:textColor="#E0E0E0"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:cit_drawableTop="@drawable/ic_snap"
+        app:cit_iconColor="#E0E0E0"
+        app:cit_iconHeight="32dp"
+        app:cit_iconWidth="32dp" />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_emi_no_list_item_emi_int"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp" />
+    <TextView
+        android:id="@+id/tv_emi_amt_list_item_emi_int"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp"/>
+    <TextView
+        android:id="@+id/tv_emi_due_date_list_item_emi_int"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_emi_status_date_list_item_emi_int"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:id="@+id/btn_emi_pay_qr_list_item_emi_int"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate QR Code"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/btn_emi_pay_link_list_item_emi_int"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Payment Link"
+        android:textSize="18sp" />
+
+</LinearLayout>

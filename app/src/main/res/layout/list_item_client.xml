@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_list_item_clients">
+
+    <ImageView
+        android:id="@+id/iv_thumbnail_list_item_client"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_info_list_item_client"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@id/iv_thumbnail_list_item_client"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_client_name_list_item_client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textSize="13sp"
+            tools:text="Name:-" />
+
+        <TextView
+            android:id="@+id/tv_client_phone_list_item_client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textSize="13sp"
+            tools:text="Phone:-" />
+
+        <TextView
+            android:id="@+id/tv_client_address_list_item_client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textSize="13sp"
+            tools:text="Address:-" />
+
+        <TextView
+            android:id="@+id/tv_client_loan_amt_sought_list_item_client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textSize="13sp"
+            tools:text="Loan Amt Sought:-" />
+
+        <TextView
+            android:id="@+id/tv_client_status_list_item_client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textSize="13sp"
+            tools:text="Status:-" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_option_menu_list_item_client"
+        android:layout_toEndOf="@id/ll_info_list_item_client"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_more_grey"/>
+
+</RelativeLayout>

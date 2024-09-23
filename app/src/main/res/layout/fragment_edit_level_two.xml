@@ -1,0 +1,1613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_fragment_edit_level_two"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.EditLevelTwoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.baoyachi.stepview.HorizontalStepView
+                android:id="@+id/step_view_fragment_edit_level_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_qFPO_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_is_fpo"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_qFPO_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/tv_qFPO_fragment_edit_level_two"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qFPOYes_fragment_edit_level_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="@string/lbl_yes"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qFPONo_fragment_edit_level_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:checked="true"
+                        android:text="@string/lbl_no"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fpo_fragment_edit_level_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.github.aakira.compoundicontextview.CompoundIconTextView
+                    android:id="@+id/tv_lblFPOName_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lbl_fpo_name"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+
+                    app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                    app:cit_iconColor="@color/color_mandatory_field"
+                    app:cit_iconHeight="8dp"
+                    app:cit_iconWidth="8dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_FPOName_fragment_edit_level_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/actv_FPOName_fragment_edit_level_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:inputType="text"
+                        android:padding="8dp"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_fpo_nil_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:text="@string/lbl_fpo_not_in_list"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <com.github.aakira.compoundicontextview.CompoundIconTextView
+                    android:id="@+id/tv_lblFPOCode_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lbl_fpo_code"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+
+                    app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                    app:cit_iconColor="@color/color_mandatory_field"
+                    app:cit_iconHeight="8dp"
+                    app:cit_iconWidth="8dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_fpoCode_fragment_edit_level_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_fpoCode_fragment_edit_level_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:enabled="false"
+                        android:padding="8dp"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.github.aakira.compoundicontextview.CompoundIconTextView
+                android:id="@+id/tv_lblFamilyNo_fragment_edit_level_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lbl_family_member_count"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                app:cit_iconColor="@color/color_mandatory_field"
+                app:cit_iconHeight="8dp"
+                app:cit_iconWidth="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_familyNo_fragment_edit_level_two"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_familyNo_fragment_edit_level_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/roundededge_edittext"
+                    android:digits="1234567890"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:hint="@string/et_hint_member_count"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.github.aakira.compoundicontextview.CompoundIconTextView
+                android:id="@+id/tv_lblPassportPhoto_fragment_edit_level_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/lbl_passport_size_photo"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray"
+                android:textStyle="bold"
+
+                app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                app:cit_iconColor="@color/color_mandatory_field"
+                app:cit_iconHeight="8dp"
+                app:cit_iconWidth="8dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <!--<EditText
+                    android:id="@+id/et_filePathPassportPhoto_fragment_level_two"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/roundededge_edittext"
+                    android:ellipsize="end"
+                    android:enabled="false"
+                    android:hint="Path"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />-->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_btn_upload_passport_image_fragment_edit_level_two"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_cv_btn_upload_passport_image_fragment_edit_level_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="Upload Photo"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!--<ImageView
+                    android:id="@+id/iv_attachPassportPhoto_fragment_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_margin="4dp"
+                    android:layout_toEndOf="@+id/et_filePathPassportPhoto_fragment_level_two"
+                    android:src="@drawable/ic_attach_file_grey" />-->
+
+                <ImageView
+                    android:id="@+id/iv_viewPassport_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_toEndOf="@+id/cv_btn_upload_passport_image_fragment_edit_level_two"
+                    android:src="@drawable/ic_view_doc_grey" />
+
+                <!--<ImageView
+                    android:id="@+id/iv_clPathPassport_fragment_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_margin="4dp"
+                    android:layout_toEndOf="@+id/iv_viewPassport_fragment_level_two"
+                    android:src="@drawable/ic_refresh_grey_24dp" />-->
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/lbl_bank_details"
+                android:textSize="18sp" />
+
+            <com.github.aakira.compoundicontextview.CompoundIconTextView
+                android:id="@+id/tv_ifsc_fragment_edit_level_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lbl_ifsc"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                app:cit_iconColor="@color/color_mandatory_field"
+                app:cit_iconHeight="8dp"
+                app:cit_iconWidth="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_ifsc_fragment_edit_level_two"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_ifsc_fragment_edit_level_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/roundededge_edittext"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                    android:padding="8dp"
+                    android:hint="@string/et_hint_dbt_ifsc"
+                    android:inputType="textCapWords"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.github.aakira.compoundicontextview.CompoundIconTextView
+                android:id="@+id/tv_accNo_fragment_edit_level_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lbl_acc_no"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                app:cit_iconColor="@color/color_mandatory_field"
+                app:cit_iconHeight="8dp"
+                app:cit_iconWidth="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_accNo_fragment_edit_level_two"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_accNo_fragment_edit_level_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890"
+                        android:padding="8dp"
+                        android:hint="@string/et_hint_dbt_acc_no"
+                        android:inputType="textCapWords"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ProgressBar
+                    android:id="@+id/pBar_acc_no_fragment_edit_level_two"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:minWidth="24dp"
+                    android:minHeight="24dp"
+                    android:progress="0"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_viewAccNo_valid_fragment_edit_level_two"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/ic_cancel_red" />
+
+            </LinearLayout>
+
+            <com.github.aakira.compoundicontextview.CompoundIconTextView
+                android:id="@+id/tv_bank_fragment_edit_level_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lbl_bank_name"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                app:cit_iconColor="@color/color_mandatory_field"
+                app:cit_iconHeight="8dp"
+                app:cit_iconWidth="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_bank_fragment_edit_level_two"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/actv_bank_fragment_edit_level_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/roundededge_edittext"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:hint="@string/et_hint_dbt_bank_name"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/lbl_passbook_photo"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--<EditText
+                    android:id="@+id/et_filePathPassbookPhoto_fragment_level_two"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/roundededge_edittext"
+                    android:ellipsize="end"
+                    android:enabled="false"
+                    android:hint="Path"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />-->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_btn_upload_passbook_fragment_edit_level_two"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_cv_btn_upload_passbook_fragment_edit_level_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="Upload Photo"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/iv_viewPassbook_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_toEndOf="@+id/cv_btn_upload_passbook_fragment_edit_level_two"
+                    android:src="@drawable/ic_view_doc_grey" />
+
+                <!--<ImageView
+                    android:id="@+id/iv_clPathPassbook_fragment_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_margin="4dp"
+                    android:layout_toEndOf="@+id/iv_viewPassbook_fragment_level_two"
+                    android:src="@drawable/ic_refresh_grey_24dp" />-->
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/lbl_kcc"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_qKLoan_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_hold_kcc"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_qKLoan_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/tv_qKLoan_fragment_edit_level_two"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qKLoanYes_fragment_edit_level_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="@string/lbl_yes"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qKLoanNo_fragment_edit_level_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:checked="true"
+                        android:text="@string/lbl_no"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_groupBox_kLoan_fragment_edit_level_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_kLoanType_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lbl_loan_type"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight=".28"
+                    android:background="@drawable/spinner_border"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinner_kLoanType_fragment_edit_level_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:spinnerMode="dropdown" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_drop" />
+
+                </RelativeLayout>
+
+                <com.github.aakira.compoundicontextview.CompoundIconTextView
+                    android:id="@+id/tv_kLoanAccNo_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lbl_k_acc_no"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+
+                    app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                    app:cit_iconColor="@color/color_mandatory_field"
+                    app:cit_iconHeight="8dp"
+                    app:cit_iconWidth="8dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_kLoanAccNo_fragment_edit_level_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_kLoanAccNo_fragment_edit_level_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                        android:padding="8dp"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tv_kLoanBank_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lbl_bank_name"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_kLoanBank_fragment_edit_level_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/actv_kLoanBank_fragment_edit_level_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:inputType="text"
+                        android:padding="8dp"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tv_kLoanIfsc_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lbl_k_ifsc"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_kLoanIfsc_fragment_edit_level_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_kLoanIfsc_fragment_edit_level_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                        android:padding="8dp"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tv_kLoanAmount_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lbl_loan_amt"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_kLoanAmount_fragment_edit_level_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_kLoanAmount_fragment_edit_level_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:inputType="number"
+                        android:digits="1234567890"
+                        android:padding="8dp"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tv_kLoanTenure_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lbl_k_tenure"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight=".28"
+                    android:background="@drawable/spinner_border"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinner_kLoanTenure_fragment_edit_level_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:spinnerMode="dropdown" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_drop" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_kLoanObligation_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lbl_annual_obligation"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_kLoanObligation_fragment_edit_level_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_kLoanObligation_fragment_edit_level_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:digits="1234567890"
+                        android:inputType="number"
+                        android:padding="8dp"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/lbl_insurance"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_qKClInsurance_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_hold_insurence"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_qKClInsurance_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/tv_qKClInsurance_fragment_edit_level_two"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qKClInsuranceYes_fragment_edit_level_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_yes"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qKClInsuranceNo_fragment_edit_level_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/lbl_no"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/lbl_other_loan"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_qOtherLoan_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_avail_other_loan"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_qOtherLoan_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/tv_qOtherLoan_fragment_edit_level_two"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qOtherLoanYes_fragment_edit_level_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_yes"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qOtherLoanNo_fragment_edit_level_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/lbl_no"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_groupBox_otherLoan_fragment_edit_level_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_otherType_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lbl_other_loan_type"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight=".28"
+                    android:background="@drawable/spinner_border"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinner_otherType_fragment_edit_level_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:spinnerMode="dropdown" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_drop" />
+
+                </RelativeLayout>
+
+                <com.github.aakira.compoundicontextview.CompoundIconTextView
+                    android:id="@+id/tv_otherLoanAccNo_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lbl_other_loan_Account_no"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+
+                    app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                    app:cit_iconColor="@color/color_mandatory_field"
+                    app:cit_iconHeight="8dp"
+                    app:cit_iconWidth="8dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_otherLoanAccNo_fragment_edit_level_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_otherLoanAccNo_fragment_edit_level_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                        android:padding="8dp"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tv_otherLoanBank_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lbl_other_loan_bank_name"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_otherLoanBank_fragment_edit_level_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/actv_otherLoanBank_fragment_edit_level_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:completionThreshold="1"
+                        android:inputType="text"
+                        android:padding="8dp"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tv_otherLoanIfsc_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lbl_other_loan_ifsc"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_otherLoanIfsc_fragment_edit_level_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_otherLoanIfsc_fragment_edit_level_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                        android:padding="8dp"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tv_otherLoanAmount_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lbl_other_loan_amt"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_otherLoanAmount_fragment_edit_level_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_otherLoanAmount_fragment_edit_level_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:digits="1234567890"
+                        android:inputType="number"
+                        android:padding="8dp"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tv_otherLoanTenure_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lbl_other_loan_tenure"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight=".28"
+                    android:background="@drawable/spinner_border"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinner_otherLoanTenure_fragment_edit_level_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:spinnerMode="dropdown" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_drop" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_otherLoanObligation_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lbl_other_loan_obligation"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_otherLoanObligation_fragment_edit_level_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_otherLoanObligation_fragment_edit_level_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:digits="1234567890"
+                        android:inputType="number"
+                        android:padding="8dp"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/lbl_doc_need"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_lblPanCard_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/lbl_pan_card"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/cb_panCard_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_margin="4dp"
+                    android:layout_toEndOf="@+id/tv_lblPanCard_fragment_edit_level_two" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <com.github.aakira.compoundicontextview.CompoundIconTextView
+                    android:id="@+id/tv_lblIdProofDoc_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lbl_poi"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+
+                    app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                    app:cit_iconColor="@color/color_mandatory_field"
+                    app:cit_iconHeight="8dp"
+                    app:cit_iconWidth="8dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_spinner_idProof_fragment_edit_level_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_lblIdProofDoc_fragment_edit_level_two"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/spinner_border"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinner_idProof_fragment_edit_level_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:spinnerMode="dropdown" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_drop" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_poi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_spinner_idProof_fragment_edit_level_two"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_idProofNo_fragment_edit_level_two"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tiet_idProofNo_fragment_edit_level_two"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-/"
+                            android:hint="@string/lbl_hint_capital"
+                            android:padding="8dp"
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ProgressBar
+                        android:id="@+id/pBar_poi_fragment_edit_level_two"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:minWidth="24dp"
+                        android:minHeight="24dp"
+                        android:progress="0"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_viewPoi_valid_fragment_edit_level_two"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/ic_cancel_red" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_poi"
+                    android:orientation="horizontal">
+
+                    <!--<EditText
+                        android:id="@+id/et_filePathIdProof_fragment_level_two"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:ellipsize="end"
+                        android:enabled="false"
+                        android:hint="Path"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textSize="16sp" />-->
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_btn_upload_poi_fragment_edit_level_two"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="20dp"
+                        app:cardBackgroundColor="@color/colorPrimary"
+                        app:cardCornerRadius="25dp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tv_cv_btn_upload_poi_fragment_edit_level_two"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:text="Upload Image(Front)"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!--<ImageView
+                        android:id="@+id/iv_attachIdProofDoc_fragment_level_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/ic_attach_file_grey" />-->
+
+                    <ImageView
+                        android:id="@+id/iv_viewIdProofDoc_fragment_edit_level_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/ic_view_doc_grey" />
+
+                    <!--<ImageView
+                        android:id="@+id/iv_clPathIdProofDoc_fragment_level_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/ic_refresh_grey_24dp" />-->
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <com.github.aakira.compoundicontextview.CompoundIconTextView
+                    android:id="@+id/tv_lblAddressProofDoc_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/lbl_poa"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+
+                    app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                    app:cit_iconColor="@color/color_mandatory_field"
+                    app:cit_iconHeight="8dp"
+                    app:cit_iconWidth="8dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_spinner_addressProof_fragment_edit_level_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_lblAddressProofDoc_fragment_edit_level_two"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/spinner_border"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinner_addressProof_fragment_edit_level_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:spinnerMode="dropdown" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_drop" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_poa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_spinner_addressProof_fragment_edit_level_two"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_addressProofNo_fragment_edit_level_two"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tiet_addressProofNo_fragment_edit_level_two"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-/"
+                            android:hint="@string/lbl_hint_capital"
+                            android:inputType="textCapWords"
+                            android:padding="8dp"
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ProgressBar
+                        android:id="@+id/pBar_poa_fragment_edit_level_two"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:minWidth="24dp"
+                        android:minHeight="24dp"
+                        android:progress="0"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_viewPoa_valid_fragment_edit_level_two"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/ic_cancel_red" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_poa_front"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_poa"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <!--<EditText
+                        android:id="@+id/et_filePathAddressProofDoc_fragment_level_two"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:ellipsize="end"
+                        android:enabled="false"
+                        android:hint="Path"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textSize="16sp" />-->
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_btn_upload_poa_fragment_edit_level_two"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="20dp"
+                        app:cardBackgroundColor="@color/colorPrimary"
+                        app:cardCornerRadius="25dp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tv_cv_btn_upload_poa_fragment_edit_level_two"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:text="Upload Image(Front)"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!--<ImageView
+                        android:id="@+id/iv_attachAddressProofDoc_fragment_level_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/ic_attach_file_grey" />-->
+
+                    <ImageView
+                        android:id="@+id/iv_viewAddressProofDoc_fragment_edit_level_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/ic_view_doc_grey" />
+
+                    <!--<ImageView
+                        android:id="@+id/iv_clPathAddressProofDoc_fragment_level_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/ic_refresh_grey_24dp" />-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_poa_front"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <!--<EditText
+                        android:id="@+id/et_filePathAddressProofDocBack_fragment_level_two"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:ellipsize="end"
+                        android:enabled="false"
+                        android:hint="Path"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textSize="16sp" />-->
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_btn_upload_poa_back_fragment_edit_level_two"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="20dp"
+                        app:cardBackgroundColor="@color/colorPrimary"
+                        app:cardCornerRadius="25dp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tv_cv_btn_upload_poa_back_fragment_edit_level_two"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:text="Upload Image(Back)"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!--<ImageView
+                        android:id="@+id/iv_attachAddressProofDocBack_fragment_level_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/ic_attach_file_grey" />-->
+
+                    <ImageView
+                        android:id="@+id/iv_viewAddressProofDocBack_fragment_edit_level_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/ic_view_doc_grey" />
+
+                    <!--<ImageView
+                        android:id="@+id/iv_clPathAddressProofDocBack_fragment_level_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/ic_refresh_grey_24dp" />-->
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_qContactUs_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_contact"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_qContactUs_fragment_edit_level_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/tv_qContactUs_fragment_edit_level_two"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qContactUsYes_fragment_edit_level_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/lbl_yes"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qContactUsNo_fragment_edit_level_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_no"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_btn_save_fragment_edit_level_two"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="24dp"
+                app:cardBackgroundColor="#FD7D00"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Save"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

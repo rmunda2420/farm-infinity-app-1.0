@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <data
+                android:host="pay"
+                android:scheme="upi" />
+        </intent>
+
+        <package android:name="com.android.chrome" />
+    </queries>
+
+    <application
+        android:name=".App.AppController"
+        android:allowBackup="true"
+        android:enableOnBackInvokedCallback="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Activities.CheckoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.GetStartedActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.LoanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CameraActivity2"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".Activities.CameraActivity"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".Activities.GeoTagCapture"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.DropCheckoutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.OtpVerificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.SignupNewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.ChangeLanguageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.ChangePasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.SettingsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.ChooseLanguageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity android:name=".Activities.MainActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true" />
+        <activity android:name=".Activities.ImagePickerActivity" /> <!-- uCrop cropping activity -->
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" /> <!-- cache directory file provider paths -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider> <!-- Keep it false in Production environment for both the flags -->
+
+    </application>
+
+</manifest>

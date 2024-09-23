@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cl_activity_otp_verification"
+    tools:context=".Activities.OtpVerificationActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_otp_msg"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/et_otp_activity_otp_verification"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:hint="@string/lbl_hint_otp"
+            android:autofillHints="password"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_resent_otp_activity_otp_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_resend_otp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btn_submit_activity_otp_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_submit"/>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

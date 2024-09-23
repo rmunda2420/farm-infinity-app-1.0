@@ -1,0 +1,2331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_fragment_edit_level_three"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.EditLevelThreeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.baoyachi.stepview.HorizontalStepView
+                android:id="@+id/step_view_fragment_edit_level_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_qLandHolding_fragment_edit_level_three"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/lbl_land_holdings"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_qLandHolding_fragment_edit_level_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/tv_qLandHolding_fragment_edit_level_three"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qLandHoldingYes_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="@string/lbl_yes"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qLandHoldingNo_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:checked="true"
+                        android:text="@string/lbl_no"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_landHolding_fragment_edit_level_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.github.aakira.compoundicontextview.CompoundIconTextView
+                        android:id="@+id/tv_lblFarmland_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:text="@string/lbl_land_area"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+
+                        app:cit_drawableRight="@drawable/ic_mandatory_field_white_24dp"
+                        app:cit_iconColor="@color/color_mandatory_field"
+                        app:cit_iconHeight="8dp"
+                        app:cit_iconWidth="8dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_farmland_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tiet_farmland_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:digits="1234567890."
+                            android:gravity="top"
+                            android:inputType="numberDecimal"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:text="@string/lbl_land_area_unit"/>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="42dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight=".28"
+                        android:background="@drawable/spinner_border"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner_land_area_unit_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:spinnerMode="dropdown" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_drop" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_qIrrigationFacility_fragment_edit_level_three"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/lbl_irrigation_facility"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_qIrrigationFacility_fragment_edit_level_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/tv_qIrrigationFacility_fragment_edit_level_three"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qIrrigationFacilityYes_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="@string/lbl_yes"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qIrrigationFacilityNo_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:checked="true"
+                        android:text="@string/lbl_no"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_irrigationFacility_fragment_edit_level_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_irrDripIrrigation_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_drip_irrigation"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <CheckBox
+                        android:id="@+id/cb_irrRiverCanal_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_river_cannal"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_irrHydrophonics_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_hydroponics"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <CheckBox
+                        android:id="@+id/cb_irrSprinkler_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_sprinklers"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_irrRainfed_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_rainfed"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <CheckBox
+                        android:id="@+id/cb_irrWaterPump_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_water_pumps"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_irrRainWrtHrvstPond_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_rain_pond"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <CheckBox
+                        android:id="@+id/cb_irrSolarWaterPump_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_solar_water_pumps"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_irrOther_fragment_edit_level_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_other"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_qFarmEquipment_fragment_edit_level_three"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/lbl_farm_equipment"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_qFarmEquipment_fragment_edit_level_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/tv_qFarmEquipment_fragment_edit_level_three"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qFarmEquipmentYes_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="@string/lbl_yes"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qFarmEquipmentNo_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:checked="true"
+                        android:text="@string/lbl_no"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_farmEquipment_fragment_edit_level_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_equipHarvester_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_harvester"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <CheckBox
+                        android:id="@+id/cb_equipSeeder_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_seeder"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_equipCattlePlough_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_plough"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <CheckBox
+                        android:id="@+id/cb_equipTractor_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_tractor"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_equipPowerTiller_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_power_tiller"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <CheckBox
+                        android:id="@+id/cb_equipWeeder_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_weeder"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_equipOther_fragment_edit_level_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_other"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_qStorageFacility_fragment_edit_level_three"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_farm_storage_facility"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_qStorageFacility_fragment_edit_level_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/tv_qStorageFacility_fragment_edit_level_three"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qStorageFacilityYes_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="@string/lbl_yes"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qStorageFacilityNo_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:checked="true"
+                        android:text="@string/lbl_no"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_qPostHrvstFacility_fragment_edit_level_three"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_post_harvest_facility"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_qPostHrvstFacility_fragment_edit_level_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/tv_qPostHrvstFacility_fragment_edit_level_three"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qPostHrvstFacilityYes_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="@string/lbl_yes"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qPostHrvstFacilityNo_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:checked="true"
+                        android:text="@string/lbl_no"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_qLivestock_fragment_edit_level_three"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/lbl_livestock"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_qLivestock_fragment_edit_level_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/tv_qLivestock_fragment_edit_level_three"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qLivestockYes_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="@string/lbl_yes"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qLivestockNo_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:checked="true"
+                        android:text="@string/lbl_no"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_livestock_fragment_edit_level_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cb_livestkBull_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_bull"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_livestkBull_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tiet_livestkBull_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:digits="1234567890"
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="number"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cb_livestkCalf_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_calf"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_livestkCalf_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tiet_livestkCalf_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:digits="1234567890"
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="number"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_livestkCamel_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_camel"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_livestkCamel_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tiet_livestkCamel_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:digits="1234567890"
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="number"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_livestkCow_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_cow"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_livestkCow_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tiet_livestkCow_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:digits="1234567890"
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="number"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cb_livestkDuck_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_duck"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_livestkDuck_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tiet_livestkDuck_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:digits="1234567890"
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="number"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cb_livestkGoat_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_goat"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_livestkGoat_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tiet_livestkGoat_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:digits="1234567890"
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="number"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_livestkHen_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_hen"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_livestkHen_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tiet_livestkHen_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:digits="1234567890"
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="number"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_livestkHorse_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_horse_mare_mule"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_livestkHorse_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tiet_livestkHorse_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:digits="1234567890"
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="number"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_livestkPig_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_pig"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_livestkPig_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tiet_livestkPig_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:digits="1234567890"
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="number"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cb_livestkRabbit_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_rabbit"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_livestkRabbit_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tiet_livestkRabbit_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:digits="1234567890"
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="number"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_livestkSheep_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_sheep"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_livestkSheep_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tiet_livestkSheep_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:digits="1234567890"
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="number"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_livestkOther_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_other"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_livestkOther_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tiet_livestkOther_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="number"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_qRabiCrop_fragment_edit_level_three"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/lbl_rabi_crops"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_qRabiCrop_fragment_edit_level_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/tv_qRabiCrop_fragment_edit_level_three"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qRabiCropYes_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="@string/lbl_yes"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qRabiCropNo_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:checked="true"
+                        android:text="@string/lbl_no"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_rabiCrop_fragment_edit_level_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_rabicrpCash_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_cash_crop"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_rabicrpCash_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                            android:id="@+id/mact_rabicrpCash_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:completionThreshold="1"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_rabicrpGrains_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_cereal_grain"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_rabicrpGrains_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                            android:id="@+id/mact_rabicrpGrains_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:completionThreshold="1"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_rabicrpOilSeeds_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_oil_seed"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_rabicrpOilSeeds_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                            android:id="@+id/mact_rabicrpOilSeeds_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:completionThreshold="1"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_rabicrpPulse_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_pulses"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_rabicrpPulse_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                            android:id="@+id/mact_rabicrpPulse_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:completionThreshold="1"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_rabicrpSpices_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_spices"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_rabicrpSpices_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                            android:id="@+id/mact_rabicrpSpices_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:completionThreshold="1"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_rabicrpVegi_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_vegetables"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_rabicrpVegi_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                            android:id="@+id/mact_rabicrpVegi_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:completionThreshold="1"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_rabicrpOther_fragment_edit_level_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_other"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_rabicrpOther_fragment_edit_level_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:hintEnabled="false">
+
+                    <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                        android:id="@+id/mact_rabicrpOther_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:completionThreshold="1"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                        android:enabled="false"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="4dp"
+                        android:text="-"
+                        android:textSize="14sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_qKharifCrop_fragment_edit_level_three"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/lbl_kharif_crops"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_qKharifCrop_fragment_edit_level_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/tv_qKharifCrop_fragment_edit_level_three"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qKharifCropYes_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="@string/lbl_yes"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qKharifCropNo_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:checked="true"
+                        android:text="@string/lbl_no"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_kharifCrop_fragment_edit_level_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_kharifcrpCash_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_cash_crop"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_kharifcrpCash_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                            android:id="@+id/mact_kharifcrpCash_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:completionThreshold="1"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!--<ImageView
+                        android:id="@+id/iv_mic_kharifcrpCash_fragment_level_three"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_mic_grey"
+                        android:padding="8dp"/>-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_kharifcrpGrains_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_cereal_grain"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_kharifcrpGrains_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                            android:id="@+id/mact_kharifcrpGrains_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:completionThreshold="1"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_kharifcrpOilSeeds_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_oil_seed"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_kharifcrpOilSeeds_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                            android:id="@+id/mact_kharifcrpOilSeeds_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:completionThreshold="1"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_kharifcrpPulse_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_pulses"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_kharifcrpPulse_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                            android:id="@+id/mact_kharifcrpPulse_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:completionThreshold="1"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_kharifcrpSpices_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_spices"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_kharifcrpSpices_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                            android:id="@+id/mact_kharifcrpSpices_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:completionThreshold="1"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_kharifcrpVegi_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_vegetables"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_kharifcrpVegi_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                            android:id="@+id/mact_kharifcrpVegi_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:completionThreshold="1"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_kharifcrpOther_fragment_edit_level_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_other"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_kharifcrpOther_fragment_edit_level_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:hintEnabled="false">
+
+                    <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                        android:id="@+id/mact_kharifcrpOther_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:completionThreshold="1"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                        android:enabled="false"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="4dp"
+                        android:text="-"
+                        android:textSize="14sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_qSummerCrop_fragment_edit_level_three"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/lbl_summer_crops"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_qSummerCrop_fragment_edit_level_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/tv_qSummerCrop_fragment_edit_level_three"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qSummerCropYes_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="@string/lbl_yes"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qSummerCropNo_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:checked="true"
+                        android:text="@string/lbl_no"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_summerfCrop_fragment_edit_level_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_summercrpCash_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_cash_crop"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_summercrpCash_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                            android:id="@+id/mact_summercrpCash_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:completionThreshold="1"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_summercrpGrains_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_cereal_grain"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_summercrpGrains_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                            android:id="@+id/mact_summercrpGrains_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:completionThreshold="1"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_summercrpOilSeeds_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_oil_seed"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_summercrpOilSeeds_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                            android:id="@+id/mact_summercrpOilSeeds_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:completionThreshold="1"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_summercrpPulse_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_pulses"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_summercrpPulse_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                            android:id="@+id/mact_summercrpPulse_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:completionThreshold="1"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_summercrpSpices_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_spices"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_summercrpSpices_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                            android:id="@+id/mact_summercrpSpices_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:completionThreshold="1"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_summercrpVegi_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_vegetables"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_summercrpVegi_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                            android:id="@+id/mact_summercrpVegi_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:completionThreshold="1"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_summercrpOther_fragment_edit_level_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_other"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_summercrpOther_fragment_edit_level_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:hintEnabled="false">
+
+                    <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                        android:id="@+id/mact_summercrpOther_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/roundededge_edittext"
+                        android:completionThreshold="1"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                        android:enabled="false"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="4dp"
+                        android:text="-"
+                        android:textSize="14sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_qPlantationCrops_fragment_edit_level_three"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/lbl_plantation_crops"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_qPlantationCrops_fragment_edit_level_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/tv_qPlantationCrops_fragment_edit_level_three"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qPlantationCropsYes_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="@string/lbl_yes"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radBtn_qPlantationCropsNo_fragment_edit_level_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:checked="true"
+                        android:text="@string/lbl_no"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_plantationCrops_fragment_edit_level_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_plantationCrpArea_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/lbl_plantation_crops_area"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_plantationCrpArea_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tiet_plantationCrpArea_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:gravity="top"
+                            android:inputType="numberDecimal"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_plantationCrop_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_plantation_crop"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_plantationcrpCrop_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                            android:id="@+id/mact_plantationCrop_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:completionThreshold="1"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_plantationcrpFruits_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_plantation_fruit"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_plantationcrpFruits_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                            android:id="@+id/mact_plantationFruit_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:completionThreshold="1"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_medicinalPlant_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_medicinal_plant"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_medicinalPlant_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                            android:id="@+id/mact_medicinalPlant_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:completionThreshold="1"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_exoticPlant_fragment_edit_level_three"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_exotic_plant"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_exoticCrop_fragment_edit_level_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false">
+
+                        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                            android:id="@+id/mact_exoticCrop_fragment_edit_level_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/roundededge_edittext"
+                            android:completionThreshold="1"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz()/:-, "
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="4dp"
+                            android:text="-"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_chemical_fertilizer"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_chemicalFertUsd_fragment_edit_level_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/roundededge_edittext"
+                    android:digits="1234567890."
+                    android:gravity="top"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="4dp"
+                    android:hint="@string/et_hint_chem_fert"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_pesticide"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_pestiUsd_fragment_edit_level_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/roundededge_edittext"
+                    android:digits="1234567890."
+                    android:gravity="top"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="4dp"
+                    android:hint="@string/et_hint_pesticide"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_organic_fertilizer"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_organicFertUsd_fragment_edit_level_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/roundededge_edittext"
+                    android:digits="1234567890."
+                    android:gravity="top"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="4dp"
+                    android:hint="@string/et_hint_organic_fert"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_btn_save_fragment_edit_level_three"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="24dp"
+                app:cardBackgroundColor="#FD7D00"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Save"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
