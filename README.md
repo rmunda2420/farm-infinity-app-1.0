@@ -1,4 +1,4 @@
-## Flutter App ##
+## Android Native App ##
 
 An onboarding android app for farmers for data analytics and credit scoring.
 
